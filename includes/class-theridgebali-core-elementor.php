@@ -53,8 +53,8 @@ function theridgebali_core_stylesheets() {
 }
 add_action( 'elementor/frontend/after_enqueue_styles', 'theridgebali_core_stylesheets' );
 
-
 function theridgebali_core_scripts() {
-	wp_enqueue_script('bootstrap-script', plugins_url( 'public/js/bootstrap.bundle.min.js', __FILE__ ), array('jquery'), '4.5.0', true);
+    wp_register_script( 'bootstrap-script', plugins_url( 'public/js/bootstrap.bundle.min.js', __FILE__ ), array( 'jquery' ), null, true );
+    wp_enqueue_script( 'bootstrap-script' );
 }
-add_action( 'elementor/frontend/after_register_scripts', 'theridgebali_core_scripts' );
+add_action( 'wp_enqueue_scripts', 'theridgebali_core_scripts' );
