@@ -64,6 +64,13 @@ register_deactivation_hook( __FILE__, 'deactivate_theridgebali_core' );
  */
 require plugin_dir_path( __FILE__ ) . 'includes/class-theridgebali-core.php';
 
+function filter_action_theridgebali_core_links( $links ) {
+     $links['settings'] = '<a href="#">' . __( 'Settings', 'the-ridge-core' ) . '</a>';
+     $links['support'] = '<a href="#">' . __( 'Documentation', 'the-ridge-core' ) . '</a>';
+     return $links;
+}
+add_filter( 'plugin_action_links_theridgebali_core/theridgebali-core.php', 'filter_action_theridgebali_core_links', 10, 1 );
+
 /**
  * Begins execution of the plugin.
  *
