@@ -56,6 +56,6 @@ add_action( 'elementor/frontend/after_enqueue_styles', 'theridgebali_core_styles
 
 function theridgebali_core_scripts() {
 	wp_register_script( 'bootstrap-script', plugins_url( 'public/js/bootstrap.bundle.min.js', __FILE__ ) );
-	wp_enqueue_script( 'bootstrap-script' );
+	wp_enqueue_script( 'bootstrap-script', true );
 }
 add_action( 'elementor/frontend/after_register_scripts', 'theridgebali_core_scripts' );
