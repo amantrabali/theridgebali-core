@@ -46,3 +46,19 @@ function register_theridgebali_widget( $widgets_manager ) {
     $widgets_manager->register( new \Elementor_TheRidgeBali_Widget_1() );
 }
 add_action( 'elementor/widgets/register', 'register_theridgebali_widget' );
+
+function theridgebali_stylesheets() {
+	wp_register_style( 'bootstrap-css', plugins_url( 'public/css/bootstrap.min.css', __FILE__ ) );
+	wp_enqueue_style( 'bootstrap-css' );
+}
+add_action( 'elementor/frontend/after_enqueue_styles', 'theridgebali_stylesheets' );
+
+
+function theridgebali_scripts() {
+
+	wp_register_script( 'bootstrap-script', plugins_url( 'public/js/bootstrap.bundle.min.js', __FILE__ ) );
+
+	wp_enqueue_script( 'bootstrap-script' );
+
+}
+add_action( 'elementor/frontend/after_register_scripts', 'theridgebali_scripts' );
