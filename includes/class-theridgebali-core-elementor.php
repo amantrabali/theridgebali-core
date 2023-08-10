@@ -30,9 +30,9 @@
 function add_theridgebali_core_categories( $elements_manager ) {
 
     $elements_manager->add_category(
-        'theridgebali-category',
+        'ab-theridgebali-category',
         [
-            'title' => esc_html__( 'A The Ridge Bali Widget', 'theridgebali-core' ),
+            'title' => esc_html__( 'The Ridge Bali Widget', 'theridgebali-core' ),
             'icon' => 'fa fa-plug',
         ]
     );
