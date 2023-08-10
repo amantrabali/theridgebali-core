@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * The file that defines the core plugin class
+ *
+ * A class definition that includes attributes and functions used across both the
+ * public-facing side of the site and the admin area.
+ *
+ * @link       https://ardika.id
+ * @since      1.0.0
+ *
+ * @package    Theridgebali_Core
+ * @subpackage Theridgebali_Core/includes
+ */
+
+/**
+ * The core plugin class.
+ *
+ * This is used to define internationalization, admin-specific hooks, and
+ * public-facing site hooks.
+ *
+ * Also maintains the unique identifier of this plugin as well as the current
+ * version of the plugin.
+ *
+ * @since      1.0.0
+ * @package    Theridgebali_Core
+ * @subpackage Theridgebali_Core/includes
+ * @author     Ardika <hai@ardika.id>
+ */
+function add_theridgebali_core_categories( $elements_manager ) {
+
+    $elements_manager->add_category(
+        'theridgebali-category',
+        [
+            'title' => esc_html__( 'A The Ridge Bali Widget', 'theridgebali-core' ),
+            'icon' => 'fa fa-plug',
+        ]
+    );
+}
+add_action( 'elementor/elements/categories_registered', 'add_theridgebali_core_categories' );
+
+function register_theridgebali_widget( $widgets_manager ) {
+
+    require_once( __DIR__ . '/widgets/the-ridge-widget-1.php' );
+
+    $widgets_manager->register( new \Elementor_TheRidgeBali_Widget_1() );
+}
+add_action( 'elementor/widgets/register', 'register_theridgebali_widget' );

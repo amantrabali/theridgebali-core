@@ -63,6 +63,7 @@ register_deactivation_hook( __FILE__, 'deactivate_theridgebali_core' );
  * admin-specific hooks, and public-facing site hooks.
  */
 require plugin_dir_path( __FILE__ ) . 'includes/class-theridgebali-core.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-theridgebali-core-elementor.php';
 
 function filter_action_theridgebali_core_links( $links ) {
      $links['settings'] = '<a href="#">' . __( 'Settings', 'the-ridge-core' ) . '</a>';
