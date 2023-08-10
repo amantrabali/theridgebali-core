@@ -14,7 +14,7 @@ class Elementor_TheRidgeBali_Widget_1 extends \Elementor\Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'theridgebali-category' ];
+		return [ 'ab-theridgebali-category' ];
 	}
 
 	public function get_keywords() {
