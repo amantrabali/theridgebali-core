@@ -42,7 +42,9 @@ add_action( 'elementor/elements/categories_registered', 'add_theridgebali_core_c
 function register_theridgebali_widget( $widgets_manager ) {
 
     require_once( __DIR__ . '/widgets/the-ridge-widget-1.php' );
+    require_once( __DIR__ . '/widgets/the-ridge-widget-grid-blog.php' );
 
     $widgets_manager->register( new \Elementor_TheRidgeBali_Widget_1() );
+    $widgets_manager->register( new \Elementor_TheRidgeBali_Widget_Grid_Blog() );
 }
 add_action( 'elementor/widgets/register', 'register_theridgebali_widget' );
