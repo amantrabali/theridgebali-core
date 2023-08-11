@@ -181,7 +181,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 					    $thumbnail_url = $thumbnail[0];
 		    			?>
 
-		    			<div class="col-md-4 col-sm-6 col-xs-12">
+		    			<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 			                <div class="card overflow-hidden">
 			                    <div class="image position-relative overflow-hidden">
 			                    	<img src="<?php echo esc_url( $thumbnail_url ); ?>" class="img-fluid shadow object-fit-cover" alt="<?php echo esc_html( $title); ?>" style="display: block; height: 100%; width: 100%;">
