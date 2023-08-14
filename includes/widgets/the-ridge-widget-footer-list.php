@@ -94,7 +94,6 @@ class Elementor_TheRidgeBali_Widget_Footer_List extends \Elementor\Widget_Base {
 		$this->end_controls_section();
 
 		// Style Tab Start
-
 		$this->start_controls_section(
 			'section_title_style',
 			[
@@ -105,6 +104,41 @@ class Elementor_TheRidgeBali_Widget_Footer_List extends \Elementor\Widget_Base {
 
 		$this->add_control(
 			'heading_color',
+			[
+				'label' => esc_html__( 'Heading Color', 'theridgebali-core' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .footer-title' => 'color: {{VALUE}};',
+				],
+				'global' => [
+					'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
+				],
+			]
+		);
+
+		$this->add_group_control(
+			\Elementor\Group_Control_Typography::get_type(),
+			[
+				'name' => 'heading_typography',
+				'selector' => '{{WRAPPER}} .footer-title',
+				'global' => [
+					'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
+				],
+			]
+		);
+
+
+		// Style Tab Start
+		$this->start_controls_section(
+			'section_content_style',
+			[
+				'label' => esc_html__( 'Footer List', 'theridgebali-core' ),
+				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+			]
+		);
+
+		$this->add_control(
+			'footer_list_color',
 			[
 				'label' => esc_html__( 'Heading Color', 'theridgebali-core' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
@@ -120,7 +154,7 @@ class Elementor_TheRidgeBali_Widget_Footer_List extends \Elementor\Widget_Base {
 		$this->add_group_control(
 			\Elementor\Group_Control_Typography::get_type(),
 			[
-				'name' => 'heading_typography',
+				'name' => 'footer_list_typography',
 				'selector' => '{{WRAPPER}} .footer-text',
 				'global' => [
 					'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
@@ -143,7 +177,7 @@ class Elementor_TheRidgeBali_Widget_Footer_List extends \Elementor\Widget_Base {
 
 		<!-- Grid column -->
         <div class="col-md-12">
-          <h6 class="display-9 text-uppercase fw-medium mb-4 text-space-grotesk text-color-secondary">
+          <h6 class="footer-title">
             <?php echo $settings['title']; ?>
           </h6>
           <p class="footer-text">
