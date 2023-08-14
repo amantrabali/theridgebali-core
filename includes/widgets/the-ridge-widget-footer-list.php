@@ -127,6 +127,7 @@ class Elementor_TheRidgeBali_Widget_Footer_List extends \Elementor\Widget_Base {
 			]
 		);
 
+		$this->end_controls_section();
 
 		// Style Tab Start
 		$this->start_controls_section(
@@ -140,7 +141,7 @@ class Elementor_TheRidgeBali_Widget_Footer_List extends \Elementor\Widget_Base {
 		$this->add_control(
 			'footer_list_color',
 			[
-				'label' => esc_html__( 'Heading Color', 'theridgebali-core' ),
+				'label' => esc_html__( 'Footer List Color', 'theridgebali-core' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .footer-text' => 'color: {{VALUE}};',
