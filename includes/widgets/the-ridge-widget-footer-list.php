@@ -146,12 +146,12 @@ class Elementor_TheRidgeBali_Widget_Footer_List extends \Elementor\Widget_Base {
           <h6 class="display-9 text-uppercase fw-medium mb-4 text-space-grotesk text-color-secondary">
             <?php echo $settings['title']; ?>
           </h6>
-          <p class="display-8 text-color-primary">
+          <p class="footer-text">
           	<?php
           	if ( $settings['list'] ) {
 	          	foreach (  $settings['list'] as $item ) {
 	          	?>
-	            <a href="<?php echo esc_url($item['website_link']['url']); ?>" class="footer-text text-reset elementor-repeater-item-<?php echo esc_attr( $item['_id'] ); ?>"><?php echo $item['list_title'] ?> </a><br/>
+	            <a href="<?php echo esc_url($item['website_link']['url']); ?>" class="footer-text elementor-repeater-item-<?php echo esc_attr( $item['_id'] ); ?>"><?php echo $item['list_title'] ?> </a><br/>
 	          	<?php
           		}
           	}
