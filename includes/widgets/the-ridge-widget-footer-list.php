@@ -98,32 +98,24 @@ class Elementor_TheRidgeBali_Widget_Footer_List extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'section_title_style',
 			[
-				'label' => esc_html__( 'Title', 'the-ridge-core' ),
+				'label' => esc_html__( 'Title', 'theridgebali-core' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
 
 		$this->add_control(
-						'title_color',
-						[
-							'label' => esc_html__( 'Text Color', 'the-ridge-core' ),
-							'type' => \Elementor\Controls_Manager::COLOR,
-							'selectors' => [
-								'{{WRAPPER}} .hello-world' => 'color: {{VALUE}};',
-							],
-						]
-					);
-
-					$this->add_control(
-				'unique-control-name',
-				[
-					'label' => esc_html__( 'Control Label', 'textdomain' ),
-					'type' => \Elementor\Controls_Manager::COLOR,
-					'global' => [
-						// ...
-					],
-				]
-			);
+			'heading_color',
+			[
+				'label' => esc_html__( 'Heading Color', 'theridgebali-core' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .heading-class' => 'color: {{VALUE}};',
+				],
+				'global' => [
+					'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
+				],
+			]
+		);
 
 		$this->end_controls_section();
 
