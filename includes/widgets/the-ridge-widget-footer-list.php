@@ -129,7 +129,7 @@ class Elementor_TheRidgeBali_Widget_Footer_List extends \Elementor\Widget_Base {
 
 		$this->end_controls_section();
 
-		// Style Tab Start
+		// Style Tab Second
 		$this->start_controls_section(
 			'section_content_style',
 			[

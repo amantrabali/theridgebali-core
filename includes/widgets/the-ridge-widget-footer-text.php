@@ -83,6 +83,78 @@ class Elementor_TheRidgeBali_Widget_Footer_Text extends \Elementor\Widget_Base {
 
 		$this->end_controls_section();
 
+		// Style Tab Start
+		$this->start_controls_section(
+			'section_title_style',
+			[
+				'label' => esc_html__( 'Title', 'theridgebali-core' ),
+				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+			]
+		);
+
+		$this->add_control(
+			'heading_color',
+			[
+				'label' => esc_html__( 'Heading Color', 'theridgebali-core' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .footer-title' => 'color: {{VALUE}};',
+				],
+				'global' => [
+					'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
+				],
+			]
+		);
+
+		$this->add_group_control(
+			\Elementor\Group_Control_Typography::get_type(),
+			[
+				'name' => 'heading_typography',
+				'selector' => '{{WRAPPER}} .footer-title',
+				'global' => [
+					'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
+				],
+			]
+		);
+
+		$this->end_controls_section();
+
+		// Style Tab Second
+		$this->start_controls_section(
+			'section_content_style',
+			[
+				'label' => esc_html__( 'Footer List', 'theridgebali-core' ),
+				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+			]
+		);
+
+		$this->add_control(
+			'footer_list_color',
+			[
+				'label' => esc_html__( 'Footer List Color', 'theridgebali-core' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .footer-text' => 'color: {{VALUE}};',
+				],
+				'global' => [
+					'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
+				],
+			]
+		);
+
+		$this->add_group_control(
+			\Elementor\Group_Control_Typography::get_type(),
+			[
+				'name' => 'footer_list_typography',
+				'selector' => '{{WRAPPER}} .footer-text',
+				'global' => [
+					'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
+				],
+			]
+		);
+
+		$this->end_controls_section();
+
 	}
 
 	protected function render() {
@@ -96,7 +168,7 @@ class Elementor_TheRidgeBali_Widget_Footer_Text extends \Elementor\Widget_Base {
 
 		<!-- Grid column -->
         <div class="col-md-12">
-          <h6 class="display-9 text-uppercase fw-medium mb-4 text-space-grotesk text-color-secondary">
+          <h6 class="footer-title">
             <?php echo $settings['title']; ?>
           </h6>
           
@@ -104,7 +176,7 @@ class Elementor_TheRidgeBali_Widget_Footer_Text extends \Elementor\Widget_Base {
           	if ( $settings['list'] ) {
 	          	foreach (  $settings['list'] as $item ) {
 	          	?>
-	          	<p class="display-8 text-color-primary">
+	          	<p class="footer-text">
 	          		<?php echo $item['list_content']; ?>
 	          	</p>
 	          	<?php
