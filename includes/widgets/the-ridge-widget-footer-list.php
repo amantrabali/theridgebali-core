@@ -109,10 +109,21 @@ class Elementor_TheRidgeBali_Widget_Footer_List extends \Elementor\Widget_Base {
 				'label' => esc_html__( 'Heading Color', 'theridgebali-core' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .heading-class' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .footer-text' => 'color: {{VALUE}};',
 				],
 				'global' => [
 					'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
+				],
+			]
+		);
+
+		$this->add_group_control(
+			\Elementor\Group_Control_Typography::get_type(),
+			[
+				'name' => 'heading_typography',
+				'selector' => '{{WRAPPER}} .footer-text',
+				'global' => [
+					'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
 				],
 			]
 		);
@@ -140,7 +151,7 @@ class Elementor_TheRidgeBali_Widget_Footer_List extends \Elementor\Widget_Base {
           	if ( $settings['list'] ) {
 	          	foreach (  $settings['list'] as $item ) {
 	          	?>
-	            <a href="<?php echo esc_url($item['website_link']['url']); ?>" class="text-reset elementor-repeater-item-<?php echo esc_attr( $item['_id'] ); ?>"><?php echo $item['list_title'] ?> </a><br/>
+	            <a href="<?php echo esc_url($item['website_link']['url']); ?>" class="footer-text text-reset elementor-repeater-item-<?php echo esc_attr( $item['_id'] ); ?>"><?php echo $item['list_title'] ?> </a><br/>
 	          	<?php
           		}
           	}
