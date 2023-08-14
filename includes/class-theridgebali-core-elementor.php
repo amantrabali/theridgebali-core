@@ -44,9 +44,11 @@ function register_theridgebali_widget( $widgets_manager ) {
     require_once( __DIR__ . '/widgets/the-ridge-widget-1.php' );
     require_once( __DIR__ . '/widgets/the-ridge-widget-grid-blog.php' );
     require_once( __DIR__ . '/widgets/the-ridge-widget-footer-list.php' );
+    require_once( __DIR__ . '/widgets/the-ridge-widget-footer-text.php' );
 
     $widgets_manager->register( new \Elementor_TheRidgeBali_Widget_1() );
     $widgets_manager->register( new \Elementor_TheRidgeBali_Widget_Grid_Blog() );
     $widgets_manager->register( new \Elementor_TheRidgeBali_Widget_Footer_List() );
+    $widgets_manager->register( new \Elementor_TheRidgeBali_Widget_Footer_Text() );
 }
 add_action( 'elementor/widgets/register', 'register_theridgebali_widget' );
