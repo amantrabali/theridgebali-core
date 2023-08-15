@@ -228,13 +228,13 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 					    $thumbnail_url = $thumbnail[0];
 		    			?>
 
-		    			<div class="col-lg-4 col-md-12">
+		    			<div class="col-lg-4 col-md-12 d-flex align-items-stretch">
 			                <div class="card rounded-0 border-0 overflow-hidden">
 			                    <div class="image position-relative overflow-hidden">
 			                    	<img src="<?php echo esc_url( $thumbnail_url ); ?>" class="img-fluid shadow object-fit-cover" alt="<?php echo esc_html( $title); ?>" style="display: block; height: 100%; width: 100%;">
 			                    </div>
 
-			                    <div class="card-body px-0 content d-flex align-content-between flex-wrap">	
+			                    <div class="card-body px-0 content d-flex flex-column">	
 
 			                    	<div class="blog-category col-md-12">                        	
 			                        <?php 
@@ -252,12 +252,12 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 			                        ?>
 			                    	</div>
 
-			                        <div class="blog-title col-md-12">
+			                        <div class="blog-title align-self-start">
 				                        <h4 class="mb-3">
 				                        	<a href="<?php echo get_the_permalink(); ?>"><?php echo $title; ?></a>
 				                        </h4>
 			                    	</div>
-			                    	<div class="blog-description blog-title">
+			                    	<div class="blog-description">
 			                        	<p class="para-desc mx-auto mb-0"><?php echo $description; ?>
 			                        </p>
 			                    	</div>
