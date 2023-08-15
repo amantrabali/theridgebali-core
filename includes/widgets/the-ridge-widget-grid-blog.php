@@ -228,7 +228,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 					    $thumbnail_url = $thumbnail[0];
 		    			?>
 
-		    			<div class="col-lg-4 col-md-12 d-flex align-items-stretch">
+		    			<div class="col-lg-4 col-md-12 mb-3 d-flex align-items-stretch">
 			                <div class="card rounded-0 border-0 overflow-hidden">
 			                    <div class="image position-relative overflow-hidden">
 			                    	<img src="<?php echo esc_url( $thumbnail_url ); ?>" class="img-fluid shadow object-fit-cover" alt="<?php echo esc_html( $title); ?>" style="display: block; height: 100%; width: 100%;">
@@ -236,7 +236,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 
 			                    <div class="card-body px-0 content d-flex flex-column">	
 
-			                    	<div class="blog-category col-md-12">                        	
+			                    	<div class="blog-category mb-4">                        	
 			                        <?php 
 			                        	if (!empty($categories)) {
 							                $category = $categories[0];
