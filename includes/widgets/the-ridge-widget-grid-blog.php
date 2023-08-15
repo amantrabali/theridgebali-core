@@ -228,7 +228,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 					    $thumbnail_url = $thumbnail[0];
 		    			?>
 
-		    			<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+		    			<div class="col-lg-4 col-md-12">
 			                <div class="card rounded-0 border-0 overflow-hidden">
 			                    <div class="image position-relative overflow-hidden">
 			                    	<img src="<?php echo esc_url( $thumbnail_url ); ?>" class="img-fluid shadow object-fit-cover" alt="<?php echo esc_html( $title); ?>" style="display: block; height: 100%; width: 100%;">
@@ -240,7 +240,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 							                $category = $categories[0];
     										$category_id = get_cat_ID( $category->name );
 							                ?>
-							                <h6 class="mt-3 display-9 section-heading-text text-color-primary">
+							                <h6 class="mt-3">
 							                	<a href="<?php echo esc_url( get_category_link($category_id) ); ?>">
 							                			<?php echo $category->name; ?>
 							                		</a>
@@ -248,10 +248,10 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 							            <?php
 							            }
 			                        ?>
-			                        <h4 class="display-6 mb-3 text-color-secondary">
+			                        <h4 class="align-top mb-3">
 			                        	<a href="<?php echo get_the_permalink(); ?>"><?php echo $title; ?></a>
 			                        </h4>
-			                        <p class="display-8 para-desc mx-auto mb-0 text-color-primary"><?php echo $description; ?>
+			                        <p class="align-bottom para-desc mx-auto mb-0"><?php echo $description; ?>
 			                        </p>
 			                    
 			                        <div class="mt-4">
