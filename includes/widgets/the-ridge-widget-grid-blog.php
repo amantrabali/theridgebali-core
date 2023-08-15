@@ -219,7 +219,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 		            	$query->the_post();
 		            	global $post;
 		            	// Get the post title and truncate it to 122 characters
-		            	$title = $this->get_truncated_title(5);
+		            	$title = $this->get_truncated_title(10);
 			            // Get the post description and truncate it to 122 characters
 			            $description = $this->get_truncated_description(20);
 			            // Get the first category for the current post
