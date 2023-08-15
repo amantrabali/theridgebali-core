@@ -125,7 +125,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 		// Content Tab End
 
 
-		// Style Tab Start
+		// Style Title Blog
 		$this->start_controls_section(
 			'section_title_style',
 			[
@@ -135,15 +135,12 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 		);
 
 		$this->add_control(
-			'heading_color',
+			'title_color',
 			[
-				'label' => esc_html__( 'Heading Color', 'theridgebali-core' ),
+				'label' => esc_html__( 'Title Color', 'theridgebali-core' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .footer-title' => 'color: {{VALUE}};',
-				],
-				'global' => [
-					'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
+					'{{WRAPPER}} .blog-title' => 'color: {{VALUE}};',
 				],
 			]
 		);
@@ -151,35 +148,30 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 		$this->add_group_control(
 			\Elementor\Group_Control_Typography::get_type(),
 			[
-				'name' => 'heading_typography',
-				'selector' => '{{WRAPPER}} .footer-title',
-				'global' => [
-					'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
-				],
+				'name' => 'title_typography',
+				'selector' => '{{WRAPPER}} .blog-title',
 			]
 		);
 
 		$this->end_controls_section();
+		// End Style Title Blog
 
-		// Style Tab Second
+		// Style Category Blog
 		$this->start_controls_section(
-			'section_content_style',
+			'section_category_style',
 			[
-				'label' => esc_html__( 'Footer List', 'theridgebali-core' ),
+				'label' => esc_html__( 'Category', 'theridgebali-core' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
 
 		$this->add_control(
-			'footer_list_color',
+			'category_color',
 			[
-				'label' => esc_html__( 'Footer List Color', 'theridgebali-core' ),
+				'label' => esc_html__( 'Category Color', 'theridgebali-core' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .footer-text' => 'color: {{VALUE}};',
-				],
-				'global' => [
-					'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
+					'{{WRAPPER}} .blog-category' => 'color: {{VALUE}};',
 				],
 			]
 		);
@@ -187,15 +179,74 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 		$this->add_group_control(
 			\Elementor\Group_Control_Typography::get_type(),
 			[
-				'name' => 'footer_list_typography',
-				'selector' => '{{WRAPPER}} .footer-text',
-				'global' => [
-					'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
-				],
+				'name' => 'category_typography',
+				'selector' => '{{WRAPPER}} .blog-category',
 			]
 		);
 
 		$this->end_controls_section();
+		// End Style Category Blog
+
+		// Style Description Blog
+		$this->start_controls_section(
+			'section_description_style',
+			[
+				'label' => esc_html__( 'Description', 'theridgebali-core' ),
+				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+			]
+		);
+
+		$this->add_control(
+			'description_color',
+			[
+				'label' => esc_html__( 'Description Color', 'theridgebali-core' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .blog-description' => 'color: {{VALUE}};',
+				],
+			]
+		);
+
+		$this->add_group_control(
+			\Elementor\Group_Control_Typography::get_type(),
+			[
+				'name' => 'description_typography',
+				'selector' => '{{WRAPPER}} .blog-description',
+			]
+		);
+		$this->end_controls_section();
+		// End Style Description Blog
+
+		// Style Link Blog
+		$this->start_controls_section(
+			'section_link_style',
+			[
+				'label' => esc_html__( 'Link', 'theridgebali-core' ),
+				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+			]
+		);
+
+		$this->add_control(
+			'link_color',
+			[
+				'label' => esc_html__( 'Link Color', 'theridgebali-core' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .blog-link' => 'color: {{VALUE}};',
+				],
+			]
+		);
+
+		$this->add_group_control(
+			\Elementor\Group_Control_Typography::get_type(),
+			[
+				'name' => 'link_typography',
+				'selector' => '{{WRAPPER}} .blog-link',
+			]
+		);
+
+		$this->end_controls_section();
+		// End Style Link Blog
 
 	}
 
@@ -242,28 +293,28 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 							                $category = $categories[0];
     										$category_id = get_cat_ID( $category->name );
 							                ?>
-							                <h6 class="mt-3">
-							                	<a href="<?php echo esc_url( get_category_link($category_id) ); ?>">
+							                <h5 class="mt-3">
+							                	<a class="blog-category"> href="<?php echo esc_url( get_category_link($category_id) ); ?>">
 							                			<?php echo $category->name; ?>
 							                		</a>
-							                </h6>
+							                </h5>
 							            <?php
 							            }
 			                        ?>
 			                    	</div>
 
 			                        <div class="blog-title mb-4">
-				                        <h4>
-				                        	<a href="<?php echo get_the_permalink(); ?>"><?php echo $title; ?></a>
-				                        </h4>
+				                        <h3>
+				                        	<a class="blog-title"> href="<?php echo get_the_permalink(); ?>"><?php echo $title; ?></a>
+				                        </h3>
 			                    	</div>
 			                    	<div class="blog-description mt-auto pt-3 align-self-start">
-			                        	<p class="para-desc mx-auto mb-0"><?php echo $description; ?>
+			                        	<p class="blog-description para-desc mx-auto mb-0"><?php echo $description; ?>
 			                        </p>
 			                    	</div>
 
-			                    	<div class="mt-auto">
-			                            <a href="<?php echo get_the_permalink(); ?>" class="ps-0">Continue Reading</i></a>
+			                    	<div class="mt-3">
+			                            <a class="blog-link"> href="<?php echo get_the_permalink(); ?>" class="ps-0">Continue Reading</i></a>
 			                        </div>
 			                    
 			                        
