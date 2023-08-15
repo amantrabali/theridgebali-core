@@ -234,7 +234,9 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 			                    	<img src="<?php echo esc_url( $thumbnail_url ); ?>" class="img-fluid shadow object-fit-cover" alt="<?php echo esc_html( $title); ?>" style="display: block; height: 100%; width: 100%;">
 			                    </div>
 
-			                    <div class="card-body px-0 content d-flex align-content-around flex-wrap">	                        	
+			                    <div class="card-body px-0 content d-flex align-content-between flex-wrap">	
+
+			                    	<div class="blog-category col-md-12">                        	
 			                        <?php 
 			                        	if (!empty($categories)) {
 							                $category = $categories[0];
@@ -248,13 +250,15 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 							            <?php
 							            }
 			                        ?>
-			                        <div class="blog-title d-flex align-items-start align-top">
-				                        <h4 class="align-top align-self-start mb-3">
+			                    	</div>
+
+			                        <div class="blog-title col-md-12">
+				                        <h4 class="mb-3">
 				                        	<a href="<?php echo get_the_permalink(); ?>"><?php echo $title; ?></a>
 				                        </h4>
 			                    	</div>
-			                    	<div class="blog-description d-flex align-items-end align-bottom">
-			                        	<p class="align-bottom align-self-end para-desc mx-auto mb-0"><?php echo $description; ?>
+			                    	<div class="blog-description blog-title">
+			                        	<p class="para-desc mx-auto mb-0"><?php echo $description; ?>
 			                        </p>
 			                    	</div>
 			                    
