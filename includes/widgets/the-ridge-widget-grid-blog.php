@@ -248,11 +248,15 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 							            <?php
 							            }
 			                        ?>
-			                        <h4 class="align-top align-self-start mb-3">
-			                        	<a href="<?php echo get_the_permalink(); ?>"><?php echo $title; ?></a>
-			                        </h4>
-			                        <p class="align-bottom align-self-end para-desc mx-auto mb-0"><?php echo $description; ?>
+			                        <div class="blog-title d-flex align-items-start">
+				                        <h4 class="align-top align-self-start mb-3">
+				                        	<a href="<?php echo get_the_permalink(); ?>"><?php echo $title; ?></a>
+				                        </h4>
+			                    	</div>
+			                    	<div class="blog-description d-flex align-items-end">
+			                        	<p class="align-bottom align-self-end para-desc mx-auto mb-0"><?php echo $description; ?>
 			                        </p>
+			                    	</div>
 			                    
 			                        <div class="mt-4">
 			                            <a href="<?php get_category_link($category->term_id); ?>" class="ps-0">Continue Reading</i></a>
