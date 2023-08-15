@@ -263,7 +263,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 			                    	</div>
 
 			                    	<div class="mt-auto align-self-end">
-			                            <a href="<?php get_category_link($category->term_id); ?>" class="ps-0">Continue Reading</i></a>
+			                            <a href="<?php echo get_the_permalink(); ?>" class="ps-0">Continue Reading</i></a>
 			                        </div>
 			                    
 			                        
