@@ -126,7 +126,6 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 
 
 		// Style Tab Start
-
 		$this->start_controls_section(
 			'section_title_style',
 			[
@@ -136,19 +135,67 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 		);
 
 		$this->add_control(
-			'title_color',
+			'heading_color',
 			[
-				'label' => esc_html__( 'Text Color', 'theridgebali-core' ),
+				'label' => esc_html__( 'Heading Color', 'theridgebali-core' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .hello-world' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .footer-title' => 'color: {{VALUE}};',
+				],
+				'global' => [
+					'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
+				],
+			]
+		);
+
+		$this->add_group_control(
+			\Elementor\Group_Control_Typography::get_type(),
+			[
+				'name' => 'heading_typography',
+				'selector' => '{{WRAPPER}} .footer-title',
+				'global' => [
+					'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
 				],
 			]
 		);
 
 		$this->end_controls_section();
 
-		// Style Tab End
+		// Style Tab Second
+		$this->start_controls_section(
+			'section_content_style',
+			[
+				'label' => esc_html__( 'Footer List', 'theridgebali-core' ),
+				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+			]
+		);
+
+		$this->add_control(
+			'footer_list_color',
+			[
+				'label' => esc_html__( 'Footer List Color', 'theridgebali-core' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .footer-text' => 'color: {{VALUE}};',
+				],
+				'global' => [
+					'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
+				],
+			]
+		);
+
+		$this->add_group_control(
+			\Elementor\Group_Control_Typography::get_type(),
+			[
+				'name' => 'footer_list_typography',
+				'selector' => '{{WRAPPER}} .footer-text',
+				'global' => [
+					'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
+				],
+			]
+		);
+
+		$this->end_controls_section();
 
 	}
 
@@ -182,7 +229,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 		    			?>
 
 		    			<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-			                <div class="card overflow-hidden">
+			                <div class="card rounded-0 border-0 overflow-hidden">
 			                    <div class="image position-relative overflow-hidden">
 			                    	<img src="<?php echo esc_url( $thumbnail_url ); ?>" class="img-fluid shadow object-fit-cover" alt="<?php echo esc_html( $title); ?>" style="display: block; height: 100%; width: 100%;">
 			                    </div>
