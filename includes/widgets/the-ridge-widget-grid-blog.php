@@ -304,7 +304,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 			                    	</div>
 
 			                        <div class="blog-title mb-1">
-				                        <h3>
+				                        <h3 class="blog-title">
 				                        	<a class="blog-title" href="<?php echo get_the_permalink(); ?>"><?php echo $title; ?></a>
 				                        </h3>
 			                    	</div>
