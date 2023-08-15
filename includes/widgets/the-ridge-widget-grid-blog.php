@@ -294,7 +294,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
     										$category_id = get_cat_ID( $category->name );
 							                ?>
 							                <h5 class="mt-3">
-							                	<a class="blog-category"> href="<?php echo esc_url( get_category_link($category_id) ); ?>">
+							                	<a class="blog-category" href="<?php echo esc_url( get_category_link($category_id) ); ?>">
 							                			<?php echo $category->name; ?>
 							                		</a>
 							                </h5>
@@ -305,7 +305,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 
 			                        <div class="blog-title mb-4">
 				                        <h3>
-				                        	<a class="blog-title"> href="<?php echo get_the_permalink(); ?>"><?php echo $title; ?></a>
+				                        	<a class="blog-title" href="<?php echo get_the_permalink(); ?>"><?php echo $title; ?></a>
 				                        </h3>
 			                    	</div>
 			                    	<div class="blog-description mt-auto pt-3 align-self-start">
@@ -314,7 +314,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 			                    	</div>
 
 			                    	<div class="mt-3">
-			                            <a class="blog-link"> href="<?php echo get_the_permalink(); ?>" class="ps-0">Continue Reading</i></a>
+			                            <a class="blog-link" href="<?php echo get_the_permalink(); ?>" class="ps-0">Continue Reading</i></a>
 			                        </div>
 			                    
 			                        
