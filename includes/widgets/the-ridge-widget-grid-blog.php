@@ -255,7 +255,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 			                        </p>
 			                    
 			                        <div class="mt-4">
-			                            <a href="<?php get_category_link($category->term_id); ?>" class="display-10 btn btn-ridge-secondary section-heading-text text-color-secondary">Continue Reading</i></a>
+			                            <a href="<?php get_category_link($category->term_id); ?>" class="ps-0">Continue Reading</i></a>
 			                        </div>
 			                    </div>
 			                </div>
