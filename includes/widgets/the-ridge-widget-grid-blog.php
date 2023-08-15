@@ -262,7 +262,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 			                        </p>
 			                    	</div>
 
-			                    	<div class="mt-auto align-self-end">
+			                    	<div class="mt-auto align-self-start">
 			                            <a href="<?php echo get_the_permalink(); ?>" class="ps-0">Continue Reading</i></a>
 			                        </div>
 			                    
