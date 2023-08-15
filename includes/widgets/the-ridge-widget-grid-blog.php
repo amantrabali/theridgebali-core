@@ -287,7 +287,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 
 			                    <div class="card-body px-0 content d-flex flex-column">	
 
-			                    	<div class="blog-category mb-2">                        	
+			                    	<div class="blog-category mb-1">                        	
 			                        <?php 
 			                        	if (!empty($categories)) {
 							                $category = $categories[0];
@@ -303,7 +303,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 			                        ?>
 			                    	</div>
 
-			                        <div class="blog-title mb-2">
+			                        <div class="blog-title mb-1">
 				                        <h3>
 				                        	<a class="blog-title" href="<?php echo get_the_permalink(); ?>"><?php echo $title; ?></a>
 				                        </h3>
