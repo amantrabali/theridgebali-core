@@ -248,10 +248,10 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 							            <?php
 							            }
 			                        ?>
-			                        <h4 class="align-top mb-3">
+			                        <h4 class="align-top align-self-start mb-3">
 			                        	<a href="<?php echo get_the_permalink(); ?>"><?php echo $title; ?></a>
 			                        </h4>
-			                        <p class="align-bottom para-desc mx-auto mb-0"><?php echo $description; ?>
+			                        <p class="align-bottom align-self-end para-desc mx-auto mb-0"><?php echo $description; ?>
 			                        </p>
 			                    
 			                        <div class="mt-4">
