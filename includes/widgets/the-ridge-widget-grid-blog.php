@@ -261,6 +261,10 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 			                        	<p class="para-desc mx-auto mb-0"><?php echo $description; ?>
 			                        </p>
 			                    	</div>
+
+			                    	<div class="mt-auto align-self-end">
+			                            <a href="<?php get_category_link($category->term_id); ?>" class="ps-0">Continue Reading</i></a>
+			                        </div>
 			                    
 			                        
 			                    </div>
