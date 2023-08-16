@@ -34,6 +34,10 @@
         e.stopPropagation(); // Prevent the click event from propagating to the document
     });
 
+    jQuery('#navigation').on('click', function(e) {
+        e.stopPropagation(); // Prevent the click event from propagating to the document
+    });
+
     // Close the menu when clicking outside
     jQuery(document).on('click', function(e) {
         if (!jQuery(e.target).closest('.nav-trigger').length && jQuery('body').hasClass('menu-active')) {
