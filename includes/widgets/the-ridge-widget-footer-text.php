@@ -168,7 +168,7 @@ class Elementor_TheRidgeBali_Widget_Footer_Text extends \Elementor\Widget_Base {
 
 		<!-- Grid column -->
         <div class="col-md-12">
-          <h6 class="footer-title">
+          <h6 class="footer-title mb-4">
             <?php echo $settings['title']; ?>
           </h6>
           
