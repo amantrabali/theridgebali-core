@@ -28,5 +28,17 @@
 	 * Although scripts in the WordPress core, Plugins and Themes may be
 	 * practising this, we should strive to set a better example in our own work.
 	 */
+	//Menu
+	// Toggle menu
+	function toggleMenu() {
+	    document.getElementById('isToggle').classList.toggle('open');
+	    var isOpen = document.getElementById('navigation')
+	    if (isOpen.style.display === "block") {
+	        isOpen.style.display = "none";
+	    } else {
+	        isOpen.style.display = "block";
+	    }
+	};
 
 })( jQuery );
+
