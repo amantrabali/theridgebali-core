@@ -37,6 +37,10 @@
   transition: transform .4s, -webkit-transform .4s;
 }
 
+#navigation .menu-item a{
+    text-decoration: none!important;
+}
+
 @media screen and (max-width: 480px) {
   #navigation {
     width: 100%;
