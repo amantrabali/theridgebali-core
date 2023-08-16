@@ -29,18 +29,15 @@
 	 * practising this, we should strive to set a better example in our own work.
 	 */
 	function navbarRidge() {
-    var $body = jQuery('body');
-    var $navTrigger = jQuery('.nav-trigger');
-
-    $navTrigger.on('click', function(e) {
-        e.stopPropagation(); // Prevent the click from propagating to the body
-        $body.toggleClass('menu-active');
+    jQuery('.nav-trigger').on('click', function(e) {
+        jQuery('body').toggleClass('menu-active');
+        e.stopPropagation(); // Prevent the click event from propagating to the document
     });
 
     // Close the menu when clicking outside
     jQuery(document).on('click', function(e) {
-        if (!$navTrigger.is(e.target) && !$body.has(e.target).length) {
-            $body.removeClass('menu-active');
+        if (!jQuery(e.target).closest('.nav-trigger').length && jQuery('body').hasClass('menu-active')) {
+            jQuery('body').removeClass('menu-active');
         }
     });
 	}
