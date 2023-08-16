@@ -29,13 +29,25 @@
 	 * practising this, we should strive to set a better example in our own work.
 	 */
 	function navbarRidge() {
-    jQuery('.nav-trigger').on('click', function(e) {
-        jQuery('body').toggleClass('menu-active');
-	});
+    var $body = jQuery('body');
+    var $navTrigger = jQuery('.nav-trigger');
+
+    $navTrigger.on('click', function(e) {
+        e.stopPropagation(); // Prevent the click from propagating to the body
+        $body.toggleClass('menu-active');
+    });
+
+    // Close the menu when clicking outside
+    jQuery(document).on('click', function(e) {
+        if (!$navTrigger.is(e.target) && !$body.has(e.target).length) {
+            $body.removeClass('menu-active');
+        }
+    });
 	}
 
 	jQuery(document).ready(function() {
 	    navbarRidge();
 	});
+
 
 })( jQuery );
