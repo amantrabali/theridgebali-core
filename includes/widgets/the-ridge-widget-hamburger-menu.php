@@ -57,6 +57,28 @@ class Elementor_TheRidgeBali_Widget_Hamburger_Menu extends \Elementor\Widget_Bas
     	</div>
         <!-- Menu End -->
 
+        <aside id="navigation">
+		    <div class="inner">
+		        <div class="nav-trigger">
+		            <div class="bar"></div>
+		            <div class="bar"></div>
+		            <div class="bar"></div>
+		        </div>
+
+		        <?php
+		        // Display Primary Menu
+		        wp_nav_menu(array(
+		            'theme_location' => 'primary-menu',
+		            'container'      => 'ul',
+		            'menu_class'     => 'menu',
+		        ));
+		        ?>
+
+		        <hr>
+		        <p>"Welcome to our exclusive villa in Bali - Your dream destination for a perfect getaway. Immerse yourself in breathtaking views, modern amenities, and the serene beauty of the island. Book now and create unforgettable memories with your family and friends at our Bali Villa.  </p>
+		    </div>
+		</aside>
+
 		<?php
 	}
 }
