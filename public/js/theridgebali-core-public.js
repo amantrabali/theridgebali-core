@@ -28,5 +28,27 @@
 	 * Although scripts in the WordPress core, Plugins and Themes may be
 	 * practising this, we should strive to set a better example in our own work.
 	 */
+	function navbarRidge() {
+    jQuery('.nav-trigger').on('click', function(e) {
+        jQuery('body').toggleClass('menu-active');
+        e.stopPropagation(); // Prevent the click event from propagating to the document
+    });
+
+    jQuery('#navigation').on('click', function(e) {
+        e.stopPropagation(); // Prevent the click event from propagating to the document
+    });
+
+    // Close the menu when clicking outside
+    jQuery(document).on('click', function(e) {
+        if (!jQuery(e.target).closest('.nav-trigger').length && jQuery('body').hasClass('menu-active')) {
+            jQuery('body').removeClass('menu-active');
+        }
+    });
+	}
+
+	jQuery(document).ready(function() {
+	    navbarRidge();
+	});
+
 
 })( jQuery );
