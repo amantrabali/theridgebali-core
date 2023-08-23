@@ -8,17 +8,17 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              https://ardika.id
+ * @link              https://intrif.com
  * @since             1.0.0
  * @package           Theridgebali_Core
  *
  * @wordpress-plugin
  * Plugin Name:       The Ridge Bali Core Plugin
- * Plugin URI:        https://ardika.id
+ * Plugin URI:        https://intrif.com
  * Description:       This Core Plugin for Wordpress Theme The Ridge Bali
  * Version:           1.0.0
- * Author:            Ardika
- * Author URI:        https://ardika.id
+ * Author:            Intrif
+ * Author URI:        https://intrif.com
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       theridgebali-core
