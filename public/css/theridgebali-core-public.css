@@ -230,6 +230,12 @@ body.menu-active .container-fluid {
     fill: #101010;
     width: auto;
   }
+  .nav-sticky.elementor-sticky--active.theridge-sticky-active{
+    padding: 0px 10px 0px 10px!important;
+  }
+  .nav-sticky.elementor-sticky--active.theridge-sticky-active .the-ridge-nav-column{
+    height: 50px;
+  }
 }
 
 @media screen and (max-width: 480px) {
