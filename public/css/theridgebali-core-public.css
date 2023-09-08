@@ -41,15 +41,15 @@
     text-decoration: none!important;
 }
 
-#navSticky {
-  transition: all 0.3s!important;
-  position: sticky!important;
-  top: 0!important;
-  z-index: 1000!important;
+header#navStic{
+  transition: all 0.3s; /* Transisi halus untuk perubahan */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Pastikan header selalu di atas konten lainnya */
 }
 
 /* Gaya ketika header menjadi sticky */
-#navSticky.nav-sticky.sticky {
+header#navSticky.nav-sticky.sticky {
   background-color: white!important;
   color: black!important;
   height: 60px!important;
