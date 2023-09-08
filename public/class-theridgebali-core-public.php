@@ -97,7 +97,7 @@ class Theridgebali_Core_Public {
 		 * class.
 		 */
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/bootstrap.bundle.min.js', array( 'jquery' ), $this->version, true);
-		wp_enqueue_script( $this->plugin_name.'-frontend', plugin_dir_url( __FILE__ ) . 'js/theridgebali-core-public.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name.'-frontend', plugin_dir_url( __FILE__ ) . 'js/theridgebali-core-public.js', array( 'jquery' ), $this->version, true );
 
 	}
 
