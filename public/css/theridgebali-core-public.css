@@ -182,6 +182,10 @@ body.menu-active .container-fluid {
   background: #101010;
 }
 
+.nav-sticky.elementor-sticky--active.theridge-sticky-active .btn-reserve .elementor-widget-container a{
+  color: #101010;
+}
+
 .nav-sticky.elementor-sticky--active.theridge-sticky-active .btn-reserve .elementor-widget-container{
   border-color: #101010;
 }
