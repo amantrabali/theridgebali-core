@@ -41,7 +41,7 @@
     text-decoration: none!important;
 }
 
-header#navStic{
+header#navSticky{
   transition: all 0.3s; /* Transisi halus untuk perubahan */
   position: sticky;
   top: 0;
