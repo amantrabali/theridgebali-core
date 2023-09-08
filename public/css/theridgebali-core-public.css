@@ -24,6 +24,15 @@
   transition: all .3s;
 }
 
+.nav-trigger .bar {
+  width: 40px;
+  height: 3px;
+  background: #fff;
+  margin: 6px 0 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
 #navigation {
   width: 500px;
   background: #000;
@@ -39,14 +48,6 @@
 
 #navigation .menu-item a{
     text-decoration: none!important;
-}
-
-@media screen and (max-width: 480px) {
-  #navigation {
-    width: 100%;
-    overflow-y: scroll;
-    display: block;
-  }
 }
 
 #navigation .nav-trigger {
@@ -177,6 +178,10 @@ body.menu-active .container-fluid {
   background-color: #FFF;
 }
 
+.nav-sticky.elementor-sticky--active.theridge-sticky-active .nav-trigger .bar {
+  background: #000;
+}
+
 @media screen and (min-width: 768px) {
   body.menu-active .container-fluid {
     -webkit-transform: translateX(0px);
@@ -208,5 +213,13 @@ body.menu-active .container-fluid {
   body.menu-active #navigation {
     -webkit-transform: translateX(500px);
             transform: translateX(500px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #navigation {
+    width: 100%;
+    overflow-y: scroll;
+    display: block;
   }
 }
