@@ -179,7 +179,11 @@ body.menu-active .container-fluid {
 }
 
 .nav-sticky.elementor-sticky--active.theridge-sticky-active .nav-trigger .bar {
-  background: #000;
+  background: #101010;
+}
+
+.nav-sticky.elementor-sticky--active.theridge-sticky-active .btn-reserve .elementor-widget-container{
+  border-color: #101010;
 }
 
 @media screen and (min-width: 768px) {
