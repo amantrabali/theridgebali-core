@@ -41,28 +41,6 @@
     text-decoration: none!important;
 }
 
-/* Gaya default untuk header */
-#navStickyWrapper {
-    background: transparent;
-    transition: all 0.3s; /* Efek transisi saat berubah */
-    position: -webkit-sticky; /* Untuk Safari */
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Agar header selalu di atas konten lain */
-}
-
-#navSticky {
-    color: white;
-    height: 98px;
-}
-
-/* Gaya untuk header saat discroll */
-.nav-sticky-active #navSticky {
-    background: white;
-    color: black;
-    height: 60px;
-}
-
 @media screen and (max-width: 480px) {
   #navigation {
     width: 100%;

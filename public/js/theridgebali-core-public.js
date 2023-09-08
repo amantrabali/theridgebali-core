@@ -50,24 +50,5 @@
 	    navbarRidge();
 	});
 
-	document.addEventListener("DOMContentLoaded", function() {
-	    // Tambahkan id dan class ke parent dari #navSticky
-	    const navSticky = document.getElementById('navSticky');
-	    const parent = navSticky.parentElement;
-	    parent.id = 'navStickyWrapper';
-	    parent.classList.add('nav-sticky-wrapper');
-
-	    // Fungsi untuk mendeteksi scroll
-	    window.addEventListener('scroll', function() {
-	        if (window.scrollY > 100) {
-	            parent.classList.add('nav-sticky-active');
-	        } else {
-	            parent.classList.remove('nav-sticky-active');
-	        }
-	    });
-	});
-
-
-
 
 })( jQuery );
