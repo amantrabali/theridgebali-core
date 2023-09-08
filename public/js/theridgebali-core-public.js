@@ -50,16 +50,24 @@
 	    navbarRidge();
 	});
 
-	window.addEventListener('scroll', function() {
-	    const header = document.getElementById('navSticky');
-	    const scrollPosition = window.scrollY;
+	document.addEventListener("DOMContentLoaded", function() {
+	    // Tambahkan id dan class ke parent dari #navSticky
+	    const navSticky = document.getElementById('navSticky');
+	    const parent = navSticky.parentElement;
+	    parent.id = 'navStickyWrapper';
+	    parent.classList.add('nav-sticky-wrapper');
 
-	    if (scrollPosition > 98) {
-	      header.classList.add('sticky-header');
-	    } else {
-	      header.classList.remove('sticky-header');
-	    }
-	  });
+	    // Fungsi untuk mendeteksi scroll
+	    window.addEventListener('scroll', function() {
+	        if (window.scrollY > 100) {
+	            parent.classList.add('nav-sticky-active');
+	        } else {
+	            parent.classList.remove('nav-sticky-active');
+	        }
+	    });
+	});
+
+
 
 
 })( jQuery );

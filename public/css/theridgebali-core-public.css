@@ -41,18 +41,26 @@
     text-decoration: none!important;
 }
 
-header#navSticky{
-  transition: all 0.3s; /* Transisi halus untuk perubahan */
-  position: sticky;
-  top: 0;
-  z-index: 1000; /* Pastikan header selalu di atas konten lainnya */
+/* Gaya default untuk header */
+#navStickyWrapper {
+    background: transparent;
+    transition: all 0.3s; /* Efek transisi saat berubah */
+    position: -webkit-sticky; /* Untuk Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Agar header selalu di atas konten lain */
 }
 
-/* Gaya ketika header menjadi sticky */
-header#navSticky.nav-sticky.sticky-header {
-  background-color: white!important;
-  color: black!important;
-  height: 60px!important;
+#navSticky {
+    color: white;
+    height: 98px;
+}
+
+/* Gaya untuk header saat discroll */
+.nav-sticky-active #navSticky {
+    background: white;
+    color: black;
+    height: 60px;
 }
 
 @media screen and (max-width: 480px) {
