@@ -41,7 +41,7 @@
     text-decoration: none!important;
 }
 
-.nav-sticky {
+#navSticky {
   transition: all 0.3s!important;
   position: sticky!important;
   top: 0!important;
