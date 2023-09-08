@@ -41,6 +41,20 @@
     text-decoration: none!important;
 }
 
+.nav-sticky {
+  transition: all 0.3s!important;
+  position: sticky!important;
+  top: 0!important;
+  z-index: 1000!important;
+}
+
+/* Gaya ketika header menjadi sticky */
+#navSticky.nav-sticky.sticky {
+  background-color: white!important;
+  color: black!important;
+  height: 60px!important;
+}
+
 @media screen and (max-width: 480px) {
   #navigation {
     width: 100%;
