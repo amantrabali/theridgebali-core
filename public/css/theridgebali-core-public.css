@@ -189,7 +189,8 @@ body.menu-active .container-fluid {
 
 .nav-sticky.elementor-sticky--active.theridge-sticky-active .the-ridge-logo img{
   filter: invert(1) hue-rotate(0deg) brightness(0.5);
-  fill: #101010; /* Kode warna hitam */
+  fill: #101010;
+  width: 25%;
 }
 
 @media screen and (min-width: 768px) {
