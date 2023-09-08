@@ -180,6 +180,10 @@ body.menu-active .container-fluid {
   padding: 0px 30px 0px 30px!important;
 }
 
+.nav-sticky.elementor-sticky--active.theridge-sticky-active .elementor-element-populated{
+  padding: 5px;
+}
+
 .nav-sticky.elementor-sticky--active.theridge-sticky-active .nav-trigger .bar {
   background: #101010;
 }
