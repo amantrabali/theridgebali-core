@@ -58,10 +58,10 @@
 	  // Check if the user has scrolled 50 pixels or more
 	  if (window.scrollY >= 50) {
 	    // Add the .navigation-sticky-active class
-	    navSticky.classList.add('navigation-sticky-active');
+	    navSticky.classList.add('theridge-sticky-active');
 	  } else {
 	    // Remove the .navigation-sticky-active class if not scrolled 50 pixels
-	    navSticky.classList.remove('navigation-sticky-active');
+	    navSticky.classList.remove('theridge-sticky-active');
 	  }
 	}
 
