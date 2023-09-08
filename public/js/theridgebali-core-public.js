@@ -55,9 +55,9 @@
 	    const scrollPosition = window.scrollY;
 
 	    if (scrollPosition > 98) {
-	      header.classList.add('sticky');
+	      header.classList.add('sticky-header');
 	    } else {
-	      header.classList.remove('sticky');
+	      header.classList.remove('sticky-header');
 	    }
 	  });
 

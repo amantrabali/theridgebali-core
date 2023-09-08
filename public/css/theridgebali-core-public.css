@@ -49,7 +49,7 @@ header#navStic{
 }
 
 /* Gaya ketika header menjadi sticky */
-header#navSticky.nav-sticky.sticky {
+header#navSticky.nav-sticky.sticky-header {
   background-color: white!important;
   color: black!important;
   height: 60px!important;
