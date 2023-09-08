@@ -169,6 +169,7 @@ body.menu-active .container-fluid {
   opacity: 0.9;
 }
 
+/* Sticky Header */
 .nav-sticky.elementor-sticky--active{
   transition: all 0.3s; /* Efek transisi saat berubah */
 }
@@ -188,6 +189,10 @@ body.menu-active .container-fluid {
 
 .nav-sticky.elementor-sticky--active.theridge-sticky-active .btn-reserve .elementor-widget-container{
   border-color: #101010;
+}
+
+.nav-sticky.elementor-sticky--active.theridge-sticky-active .the-ridge-logo img{
+  filter: invert(1); /* Membalikkan warna untuk membuatnya hitam */
 }
 
 @media screen and (min-width: 768px) {
