@@ -236,6 +236,9 @@ body.menu-active .container-fluid {
   .nav-sticky.elementor-sticky--active.theridge-sticky-active .the-ridge-nav-column{
     height: inherit;
   }
+  .nav-sticky.elementor-sticky--active.theridge-sticky-active .elementor-element-populated{
+    padding: 10px 5px;
+  }
 }
 
 @media screen and (max-width: 480px) {
