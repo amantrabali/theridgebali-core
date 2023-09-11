@@ -192,7 +192,7 @@ body.menu-active .container-fluid {
   fill: #101010;
   width: 25%;
 }
-#theRidgeCarousel.the-ridge-carousel .swiper-pagination .swiper-pagination-bullets span.swiper-pagination-bullet{
+#theRidgeCarousel.the-ridge-carousel .swiper-pagination.swiper-pagination-bullets span.swiper-pagination-bullet{
     width: 100px;
     border: none;
     text-indent: -666666px;
@@ -202,7 +202,7 @@ body.menu-active .container-fluid {
     cursor: pointer;
 }
 
-#theRidgeCarousel.the-ridge-carousel .swiper-pagination .swiper-pagination-bullets span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+#theRidgeCarousel.the-ridge-carousel .swiper-pagination.swiper-pagination-bullets span.swiper-pagination-bullet.swiper-pagination-bullet-active{
     background: #101010;
 }
 
