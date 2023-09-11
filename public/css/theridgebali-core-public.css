@@ -201,14 +201,19 @@ body.menu-active .container-fluid {
     background: #CECECE;
     cursor: pointer;
     border-radius: 0!important;
+    position: relative;
+}
 
-    /* Tambahkan padding untuk memperluas area klik */
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    /* Gunakan margin negatif untuk menjaga tampilan visual */
-    margin-top: -10px;
-    margin-bottom: -10px;
+#theRidgeCarousel.the-ridge-carousel .swiper-pagination.swiper-pagination-bullets span.swiper-pagination-bullet::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    background: transparent; /* Pastikan tidak ada warna latar belakang */
+    cursor: pointer; /* Pastikan kursor menunjukkan bahwa ini dapat diklik */
+    z-index: -1; /* Pastikan elemen ini berada di belakang elemen utama */
 }
 
 #theRidgeCarousel.the-ridge-carousel .swiper-pagination.swiper-pagination-bullets span.swiper-pagination-bullet.swiper-pagination-bullet-active{
