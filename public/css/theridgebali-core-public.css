@@ -222,6 +222,8 @@ body.menu-active .container-fluid {
 
 #theRidgeCarousel.the-ridge-carousel .swiper-slide.swiper-slide-active{
   opacity: 0.4;
+  -webkit-transition: opacity .4s;
+  transition: opacity .4s;
 }
 
 @media screen and (min-width: 768px) {
