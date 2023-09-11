@@ -220,10 +220,9 @@ body.menu-active .container-fluid {
     background: #101010;
 }
 
-.opacity-half {
-    opacity: 0.5;
+#theRidgeCarousel.the-ridge-carousel .swiper-slide.swiper-slide-active{
+  opacity: 0.4;
 }
-
 
 @media screen and (min-width: 768px) {
   body.menu-active .container-fluid {
