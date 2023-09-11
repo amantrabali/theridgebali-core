@@ -200,6 +200,14 @@ body.menu-active .container-fluid {
     padding: 0;
     background: #CECECE;
     cursor: pointer;
+
+    /* Tambahkan padding untuk memperluas area klik */
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    /* Gunakan margin negatif untuk menjaga tampilan visual */
+    margin-top: -10px;
+    margin-bottom: -10px;
 }
 
 #theRidgeCarousel.the-ridge-carousel .swiper-pagination.swiper-pagination-bullets span.swiper-pagination-bullet.swiper-pagination-bullet-active{
