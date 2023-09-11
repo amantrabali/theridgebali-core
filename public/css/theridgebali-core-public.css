@@ -200,6 +200,7 @@ body.menu-active .container-fluid {
     padding: 0;
     background: #CECECE;
     cursor: pointer;
+    border-radius: 0!important;
 
     /* Tambahkan padding untuk memperluas area klik */
     padding-top: 10px;
