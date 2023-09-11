@@ -226,6 +226,11 @@ body.menu-active .container-fluid {
   transition: opacity .4s;
 }
 
+.the-ridge-sectiom ul, .the-ridge-sectiom ol {
+    margin: 0px;
+    padding: 10px 15px;
+}
+
 @media screen and (min-width: 768px) {
   body.menu-active .container-fluid {
     -webkit-transform: translateX(0px);
