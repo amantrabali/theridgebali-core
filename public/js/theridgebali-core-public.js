@@ -68,6 +68,32 @@
 	// Add an event listener to the window's scroll event
 	window.addEventListener('scroll', addStickyClass);
 
+	document.addEventListener('DOMContentLoaded', function() {
+    var swiperContainer = document.querySelector('.elementor-image-carousel-wrapper');
+
+    // Fungsi untuk mengatur opasitas
+    function setOpacity() {
+        // Hapus kelas dari semua gambar
+        var allImages = swiperContainer.querySelectorAll('.swiper-slide-image');
+        allImages.forEach(function(img) {
+            img.classList.remove('opacity-half');
+        });
+
+        // Tambahkan kelas ke gambar pertama
+        var firstImage = swiperContainer.querySelector('.swiper-slide-active .swiper-slide-image');
+        if (firstImage) {
+            firstImage.classList.add('opacity-half');
+        }
+    }
+
+    // Panggil fungsi saat halaman dimuat
+    setOpacity();
+
+    // Tambahkan event listener untuk perubahan slide
+    swiperContainer.addEventListener('transitionend', function() {
+        setOpacity();
+    });
+});
 
 
 })( jQuery );
