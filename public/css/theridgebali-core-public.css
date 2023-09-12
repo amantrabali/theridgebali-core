@@ -249,6 +249,9 @@ body.menu-active .container-fluid {
 }
 
 @media screen and (max-width: 768px) {
+  .nav-trigger {
+    margin: 0px 0px 0px 0px;
+  }
   body.menu-active .container-fluid {
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -279,6 +282,9 @@ body.menu-active .container-fluid {
   }
   .nav-sticky.elementor-sticky--active.theridge-sticky-active .the-ridge-nav-column{
     height: inherit;
+  }
+  .nav-sticky.elementor-column-gap-default>.elementor-column>.elementor-element-populated {
+    padding: 10px 5px;
   }
   .nav-sticky.elementor-sticky--active.theridge-sticky-active .elementor-element-populated{
     padding: 10px 5px;
