@@ -154,6 +154,10 @@ body.menu-active header .nav-trigger {
   margin: 10px 0px 0px 0px;
 }
 
+body.menu-active header.nav-sticky.elementor-sticky--active .nav-trigger{
+  margin: 0px;
+}
+
 body.menu-active #navigation .nav-trigger {
   opacity: 1;
 }
