@@ -27,7 +27,7 @@
 
 #navigation {
   width: 500px;
-  background: #000;
+  background: #fff;
   position: fixed;
   top: 0;
   left: -500px;
@@ -114,7 +114,7 @@ ul.menu li:last-child, ul.menu-small li:last-child {
 
 ul.menu li a, ul.menu-small li a {
   display: block;
-  color: #fff;
+  color: #000;
   -webkit-transition: opacity .4s;
   transition: opacity .4s;
   font-size: 0.8em;
