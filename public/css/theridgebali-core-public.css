@@ -5,7 +5,7 @@
 /* 03. Navigation */
 
 .nav-trigger {
-  margin: 0px 0px 5px 5px;
+  margin: 0px 0px 0px 15px;
   padding-top: 10px;
   float: left;
   cursor: pointer;
@@ -173,7 +173,7 @@ body.menu-active .container-fluid {
 }
 
 .nav-sticky.elementor-sticky--active.theridge-sticky-active .elementor-element-populated{
-  padding: 5px;
+  padding: 10px;
 }
 
 .nav-sticky.elementor-sticky--active.theridge-sticky-active .nav-trigger .bar {
