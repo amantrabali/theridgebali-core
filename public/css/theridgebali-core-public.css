@@ -87,7 +87,7 @@
 }
 
 #navigation p {
-  color: #fff;
+  color: #3D3D3D;
   font-size: 1.3em;
   opacity: .7;
   font-family: "Playfair Display", Georgia, serif;
@@ -114,7 +114,7 @@ ul.menu li:last-child, ul.menu-small li:last-child {
 
 ul.menu li a, ul.menu-small li a {
   display: block;
-  color: #000;
+  color: #3D3D3D;
   -webkit-transition: opacity .4s;
   transition: opacity .4s;
   font-size: 0.8em;
