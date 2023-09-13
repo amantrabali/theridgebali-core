@@ -240,14 +240,23 @@ body.menu-active .container-fluid {
 }
 
 /* Arrow Hover*/
-.hero-wrap .menu-hover-arrow{
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
+.hero-wrap .menu-hover-arrow {
+    position: relative;
 }
-.hero-wrap .menu-hover-arrow:hover .arrow-hover.trb-hidden{
-  display: inline-block;
+
+.hero-wrap .menu-hover-arrow svg {
+    position: absolute;
+    bottom: -55px; /* Adjust sesuai kebutuhan */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
+
+.hero-wrap .menu-hover-arrow:hover svg {
+    opacity: 1;
+}
+
 
 @media screen and (min-width: 768px) {
   body.menu-active .container-fluid {
