@@ -276,6 +276,12 @@ body.menu-active .container-fluid {
   .nav-trigger {
     margin: 0px 0px 0px 0px;
   }
+  #navigation .nav-trigger {
+    top: -45px;
+  }
+  .nav-trigger .bar {
+    width: 30px;
+  }
   body.menu-active .container-fluid {
     -webkit-transform: translateX(0);
             transform: translateX(0);
