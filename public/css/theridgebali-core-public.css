@@ -276,10 +276,10 @@ body.menu-active .container-fluid {
   .nav-trigger {
     margin: 0px 0px 0px 0px;
   }
-  .menu-active .nav-trigger {
+  body.menu-active .nav-trigger {
     top: -45px;
   }
-  .menu-active .nav-trigger .bar {
+  body.menu-active .nav-trigger .bar {
     width: 30px;
   }
   body.menu-active .container-fluid {
