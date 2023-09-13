@@ -88,15 +88,18 @@
 	});
 
 	document.addEventListener("DOMContentLoaded", function() {
+		if (document.body.classList.contains('page-id-1276')) {
 		const herofloorplanBtn = document.querySelector("#BtntoTrbiFloorplan a");
 	    const floorplanBtn = document.querySelector("#toTrbiFloorplan a");
 	    const amenitiesBtn = document.querySelector("#toTrbiAmenities a");
 	    
+	    const spesificationSection = document.querySelector("#trbi-Spesification");
 	    const floorplanSection = document.querySelector("#trbi-Floorplan");
 	    const amenitiesSection = document.querySelector("#trbi-Amenities");
 
 	    herofloorplanBtn.addEventListener("click", function(e) {
 	        e.preventDefault(); // Mencegah perilaku default anchor
+	        spesificationSection.style.display = "block"; 
 	        floorplanSection.style.display = "block"; // Tampilkan floorplan section
 	        amenitiesSection.style.display = "none"; // Sembunyikan amenities section
 	    });
@@ -112,9 +115,6 @@
 	        amenitiesSection.style.display = "block"; // Tampilkan amenities section
 	        floorplanSection.style.display = "none"; // Sembunyikan floorplan section
 	    });
+		}
 	});
-
-
-
-
 })( jQuery );
