@@ -90,6 +90,7 @@
 	document.addEventListener("DOMContentLoaded", function() {
 		if (document.body.classList.contains('page-id-1276')) {
 		const herofloorplanBtn = document.querySelector("#BtntoTrbiFloorplan a");
+		const spesificationBtn = document.querySelector("#toTrbiSpesification a");
 	    const floorplanBtn = document.querySelector("#toTrbiFloorplan a");
 	    const amenitiesBtn = document.querySelector("#toTrbiAmenities a");
 	    
@@ -103,6 +104,10 @@
 	        floorplanSection.style.display = "block"; // Tampilkan floorplan section
 	        amenitiesSection.style.display = "none"; // Sembunyikan amenities section
 	    });
+
+	    spesificationBtn.addEventListener("click", function(e) {
+	    	spesificationSection.style.display = "block";
+	    }
 
 	    floorplanBtn.addEventListener("click", function(e) {
 	        e.preventDefault(); // Mencegah perilaku default anchor
