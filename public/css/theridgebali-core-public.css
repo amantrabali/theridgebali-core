@@ -240,7 +240,12 @@ body.menu-active .container-fluid {
 }
 
 /* Arrow Hover*/
-.hero-wrap .menu-hover-arrow:hover .arrow-hover{
+.hero-wrap .menu-hover-arrow{
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.hero-wrap .menu-hover-arrow:hover .arrow-hover.trb-hidden{
   display: inline-block;
 }
 
