@@ -260,8 +260,11 @@ body.menu-active .container-fluid {
 /* Button Hover Line*/
 .button-hover-line .elementor-button-link {
     position: relative;
-    text-decoration: none;
-    overflow: hidden; /* Ini akan memastikan garis tidak keluar dari batas tautan saat beranimasi */
+    overflow: hidden; 
+}
+
+.button-hover-line .elementor-button-link:hover {
+    text-decoration: none; /* Hilangkan garis bawah saat di-hover */
 }
 
 .button-hover-line .elementor-button-link::after {
@@ -269,15 +272,18 @@ body.menu-active .container-fluid {
     position: absolute;
     bottom: 0;
     left: 0;
-    right: 100%; /* Ini akan mengatur lebar garis menjadi 0 untuk memulai */
-    height: 1px; /* Tinggi garis bawah */
-    background-color: currentColor; /* Warna garis bawah akan sama dengan warna teks */
-    transition: right 0.3s ease; /* Animasi dari kiri ke kanan */
+    right: 100%; 
+    height: 1px; 
+    background-color: currentColor; 
+    transition: right 0.3s ease; 
+    opacity: 0; /* Garis bawah default tidak terlihat */
 }
 
 .button-hover-line .elementor-button-link:hover::after {
-    right: 0; /* Ini akan mengatur lebar garis menjadi 100% saat di-hover */
+    right: 0; 
+    opacity: 1; /* Garis bawah terlihat saat di-hover */
 }
+
 
 
 @media screen and (min-width: 768px) {
