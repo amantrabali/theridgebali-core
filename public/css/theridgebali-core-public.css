@@ -286,6 +286,11 @@ body.menu-active .container-fluid {
 }
 
 
+/* Button Accordion*/
+#trbi-Floorplan, #trbi-Amenities {
+    display: none;
+}
+
 
 @media screen and (min-width: 768px) {
   body.menu-active .container-fluid {
