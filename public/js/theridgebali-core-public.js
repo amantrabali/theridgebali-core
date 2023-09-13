@@ -87,32 +87,7 @@
 	    });
 	});
 
-	document.addEventListener("DOMContentLoaded", function() {
-		const herofloorplanBtn = document.querySelector("#BtntoTrbiFloorplan a");
-	    const floorplanBtn = document.querySelector("#toTrbiFloorplan a");
-	    const amenitiesBtn = document.querySelector("#toTrbiAmenities a");
-	    
-	    const floorplanSection = document.querySelector("#trbi-Floorplan");
-	    const amenitiesSection = document.querySelector("#trbi-Amenities");
 
-	    herofloorplanBtn.addEventListener("click", function(e) {
-	        e.preventDefault(); // Mencegah perilaku default anchor
-	        floorplanSection.style.display = "block"; // Tampilkan floorplan section
-	        amenitiesSection.style.display = "none"; // Sembunyikan amenities section
-	    });
-
-	    floorplanBtn.addEventListener("click", function(e) {
-	        e.preventDefault(); // Mencegah perilaku default anchor
-	        floorplanSection.style.display = "block"; // Tampilkan floorplan section
-	        amenitiesSection.style.display = "none"; // Sembunyikan amenities section
-	    });
-
-	    amenitiesBtn.addEventListener("click", function(e) {
-	        e.preventDefault(); // Mencegah perilaku default anchor
-	        amenitiesSection.style.display = "block"; // Tampilkan amenities section
-	        floorplanSection.style.display = "none"; // Sembunyikan floorplan section
-	    });
-	});
 
 
 
