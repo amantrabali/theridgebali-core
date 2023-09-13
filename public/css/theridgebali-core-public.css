@@ -239,7 +239,7 @@ body.menu-active .container-fluid {
     padding: 10px 15px;
 }
 
-/* Arrow Hover*/
+/* Button Hover Arrow */
 .hero-wrap .menu-hover-arrow {
     position: relative;
 }
@@ -255,6 +255,28 @@ body.menu-active .container-fluid {
 
 .hero-wrap .menu-hover-arrow:hover svg {
     opacity: 1;
+}
+
+/* Button Hover Line*/
+.button-hover-line .elementor-button-link {
+    position: relative;
+    text-decoration: none;
+    overflow: hidden; /* Ini akan memastikan garis tidak keluar dari batas tautan saat beranimasi */
+}
+
+.button-hover-line .elementor-button-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 100%; /* Ini akan mengatur lebar garis menjadi 0 untuk memulai */
+    height: 1px; /* Tinggi garis bawah */
+    background-color: currentColor; /* Warna garis bawah akan sama dengan warna teks */
+    transition: right 0.3s ease; /* Animasi dari kiri ke kanan */
+}
+
+.button-hover-line .elementor-button-link:hover::after {
+    right: 0; /* Ini akan mengatur lebar garis menjadi 100% saat di-hover */
 }
 
 
