@@ -260,11 +260,12 @@ body.menu-active .container-fluid {
 /* Button Hover Line*/
 .button-hover-line .elementor-button-link {
     position: relative;
+    text-decoration: underline; /* Default dengan garis bawah */
     overflow: hidden; 
 }
 
 .button-hover-line .elementor-button-link:hover {
-    text-decoration: none; /* Hilangkan garis bawah saat di-hover */
+    text-decoration: none !important; /* Pakai !important agar pasti diterapkan */
 }
 
 .button-hover-line .elementor-button-link::after {
