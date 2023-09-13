@@ -3,7 +3,9 @@
  * included in this file.
  */
 /* 03. Navigation */
-
+.trb-hidden{
+  display:none;
+}
 .nav-trigger {
   margin: 0px 0px 0px 15px;
   padding-top: 10px;
@@ -235,6 +237,11 @@ body.menu-active .container-fluid {
 .the-ridge-sectiom ul, .the-ridge-sectiom ol {
     margin: 0px;
     padding: 10px 15px;
+}
+
+/* Arrow Hover*/
+.hero-wrap .menu-hover-arrow: hover .arrow-hover
+  display: inline-block;
 }
 
 @media screen and (min-width: 768px) {
