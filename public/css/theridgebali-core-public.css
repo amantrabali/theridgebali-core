@@ -270,6 +270,9 @@ body.menu-active .container-fluid {
 }
 
 @media screen and (max-width: 768px) {
+  .the-ridge-nav-column .the-ridge-logo{
+    padding-left: 20px;
+  }
   .nav-trigger {
     margin: 0px 0px 0px 0px;
   }
