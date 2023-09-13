@@ -68,6 +68,24 @@
 	// Add an event listener to the window's scroll event
 	window.addEventListener('scroll', addStickyClass);
 
-	
+	document.addEventListener('DOMContentLoaded', function() {
+	    const menuHoverArrows = document.querySelectorAll('.menu-hover-arrow');
+
+	    menuHoverArrows.forEach(menuItem => {
+	        const svgElem = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+	        svgElem.setAttribute("width", "15");
+	        svgElem.setAttribute("height", "50");
+	        svgElem.setAttribute("viewBox", "0 0 15 50");
+	        svgElem.setAttribute("fill", "none");
+
+	        const pathElem = document.createElementNS("http://www.w3.org/2000/svg", "path");
+	        pathElem.setAttribute("d", "M8.07692 -3.6606e-07L8.07692 46.7334L14.1346 39.4057L15 40.3269L7.5 49.3992L-1.45724e-06 40.3269L0.865384 39.4057L6.92307 46.7334L6.92308 -4.2707e-07L8.07692 -3.6606e-07Z");
+	        pathElem.setAttribute("fill", "white");
+
+	        svgElem.appendChild(pathElem);
+	        menuItem.appendChild(svgElem);
+	    });
+	});
+
 
 })( jQuery );
