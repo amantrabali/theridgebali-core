@@ -3,6 +3,9 @@
  * included in this file.
  */
 /* 03. Navigation */
+body{
+  overflow-x: hidden;
+}
 .trb-hidden{
   display:none;
 }

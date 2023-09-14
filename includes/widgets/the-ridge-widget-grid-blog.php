@@ -100,13 +100,6 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 	        ]
 	    );
 
-	    $pages = get_pages();
-	    $page_options = array();
-
-	    foreach ( $pages as $page ) {
-	        $page_options[ $page->ID ] = $page->post_title;
-	    }
-
 	    $this->add_control(
 	        'cta_link_page',
 	        [
@@ -119,6 +112,27 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 	            ],
 	        ]
 	    );
+
+	    $this->add_control(
+		    'button_continue',
+		    [
+		        'label' => __('Enable Continue Reading', 'theridgebali-core'),
+		        'type' => \Elementor\Controls_Manager::SELECT,
+		        'options' => [
+		            'enable' => __('Enable', 'theridgebali-core'),
+		            'disable' => __('Disable', 'theridgebali-core'),
+		        ],
+		        'default' => 'disable',
+		    ]
+		);
+
+
+	    $pages = get_pages();
+	    $page_options = array();
+
+	    foreach ( $pages as $page ) {
+	        $page_options[ $page->ID ] = $page->post_title;
+	    }
 
 		$this->end_controls_section();
 
@@ -312,12 +326,15 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 			                        	<p class="blog-description para-desc mx-auto mb-0"><?php echo $description; ?>
 			                        </p>
 			                    	</div>
-
+			                    	<?php 
+			                    	if ('enable' === $settings['button_continue']) {
+			                    	?>
 			                    	<div class="mt-4">
 			                            <a class="blog-link" href="<?php echo get_the_permalink(); ?>" class="ps-0">Continue Reading</i></a>
 			                        </div>
-			                    
-			                        
+			                        <?php 
+			                    	}
+			                    	?>                
 			                    </div>
 			                </div>
 			            </div><!--end col-->
