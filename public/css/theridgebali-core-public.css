@@ -373,7 +373,7 @@ body.menu-active .container-fluid {
     padding: 0px;
   }
   .nav-sticky.elementor-sticky--active.theridge-sticky-active .elementor-element-populated{
-    padding: 0px;
+    padding: 10px;
   }
 }
 
