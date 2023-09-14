@@ -100,6 +100,13 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 	        ]
 	    );
 
+	    $pages = get_pages();
+	    $page_options = array();
+
+	    foreach ( $pages as $page ) {
+	        $page_options[ $page->ID ] = $page->post_title;
+	    }
+
 	    $this->add_control(
 	        'cta_link_page',
 	        [
@@ -124,15 +131,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 		        ],
 		        'default' => 'disable',
 		    ]
-		);
-
-
-	    $pages = get_pages();
-	    $page_options = array();
-
-	    foreach ( $pages as $page ) {
-	        $page_options[ $page->ID ] = $page->post_title;
-	    }
+		);	    
 
 		$this->end_controls_section();
 
