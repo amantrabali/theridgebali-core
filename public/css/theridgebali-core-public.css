@@ -383,6 +383,10 @@ body.menu-active .container-fluid {
     overflow-y: scroll;
     display: block;
   }
+  .theridge-bali-layout section.elementor-section.elementor-top-section{
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+  }
 }
 @media screen and (max-width: 768px) {
   #navigation hr {
