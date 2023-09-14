@@ -370,13 +370,16 @@ body.menu-active .container-fluid {
     height: inherit;
   }
   .nav-sticky.elementor-column-gap-default>.elementor-column>.elementor-element-populated {
-    padding: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .nav-sticky .elementor-column-gap-default>.elementor-column>.elementor-element-populated {
-    padding: 0px!important;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .nav-sticky.elementor-sticky--active.theridge-sticky-active .elementor-element-populated{
-    padding: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
