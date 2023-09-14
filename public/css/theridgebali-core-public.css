@@ -370,10 +370,10 @@ body.menu-active .container-fluid {
     height: inherit;
   }
   .nav-sticky.elementor-column-gap-default>.elementor-column>.elementor-element-populated {
-    padding: 10px;
+    padding: 0px;
   }
   .nav-sticky.elementor-sticky--active.theridge-sticky-active .elementor-element-populated{
-    padding: 10px;
+    padding: 0px;
   }
 }
 
