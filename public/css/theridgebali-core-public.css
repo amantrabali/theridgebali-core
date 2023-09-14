@@ -384,8 +384,8 @@ body.menu-active .container-fluid {
     display: block;
   }
   .theridge-bali-layout header#navSticky{
-    padding-left: 20px!important;
-    padding-right: 20px!important;
+    margin-left: 20px!important;
+    margin-right: 20px!important;
   }
   .theridge-bali-layout section.elementor-section.elementor-top-section{
     padding-left: 20px!important;
