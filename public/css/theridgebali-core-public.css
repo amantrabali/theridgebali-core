@@ -206,6 +206,7 @@ body.menu-active .container-fluid {
 .trb-header-black.nav-sticky.elementor-sticky--active .the-ridge-logo img {
   filter: inherit;
   fill: inherit;
+  width: 194px;
 }
 
 #theRidgeCarousel.the-ridge-carousel .swiper-pagination.swiper-pagination-bullets span.swiper-pagination-bullet{
