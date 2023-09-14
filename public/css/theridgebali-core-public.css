@@ -213,6 +213,10 @@ body.menu-active .container-fluid {
   width: 194px;
 }
 
+.trb-header-black.nav-sticky.elementor-sticky--active.theridge-sticky-active .the-ridge-logo img{
+  width: 194px;
+}
+
 #theRidgeCarousel.the-ridge-carousel .swiper-pagination.swiper-pagination-bullets span.swiper-pagination-bullet{
     width: 100px;
     border: none;
@@ -353,6 +357,11 @@ body.menu-active .container-fluid {
     filter: invert(1) hue-rotate(0deg) brightness(0.5);
     fill: #101010;
     width: auto;
+  }
+  .trb-header-black.nav-sticky.elementor-sticky--active .the-ridge-logo img {
+    filter: inherit;
+    fill: inherit;
+    width: 194px;
   }
   .nav-sticky.elementor-sticky--active.theridge-sticky-active{
     padding: 0px 10px 0px 10px!important;
