@@ -2,10 +2,11 @@
  * All of the CSS for your public-facing functionality should be
  * included in this file.
  */
-/* 03. Navigation */
-body{
-  overflow-x: hidden!important;
+/*Body*/
+html{
+  overflow-x: hidden;
 }
+/* 03. Navigation */
 .trb-hidden{
   display:none;
 }
