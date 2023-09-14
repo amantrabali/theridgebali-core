@@ -372,7 +372,7 @@ body.menu-active .container-fluid {
   .nav-sticky.elementor-column-gap-default>.elementor-column>.elementor-element-populated {
     padding: 0px;
   }
-  .nav-sticky.elementor-column-gap-default>.elementor-column>.elementor-element-populated {
+  .nav-sticky .elementor-column-gap-default>.elementor-column>.elementor-element-populated {
     padding: 0px!important;
   }
   .nav-sticky.elementor-sticky--active.theridge-sticky-active .elementor-element-populated{
