@@ -4,8 +4,8 @@
  */
 /* 03. Navigation */
 body{
-  width: 100vh!important
-  overflow-x: hidden!important
+  width: 100vh!important;
+  overflow-x: hidden!important;
 }
 .trb-hidden{
   display:none;
