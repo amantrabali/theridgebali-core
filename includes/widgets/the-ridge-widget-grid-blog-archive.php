@@ -272,8 +272,8 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
 	    <div class="row justify-content-center">
 	    	<?php
 	    		$args = array(
-			        'post_type' => $settings['post_type'],
-			        'posts_per_page' => $settings['post_count'],
+			        'post_type' => 'post',
+			        'posts_per_page' => 9,
 			    );
 
 			    $query = new WP_Query($args);
