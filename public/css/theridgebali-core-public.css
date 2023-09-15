@@ -11,7 +11,7 @@ html{
   display:none;
 }
 .nav-trigger {
-  margin: 0px 0px 0px 15px;
+  margin: 0px 0px 0px 20px;
   padding-top: 10px;
   float: left;
   cursor: pointer;
@@ -177,7 +177,6 @@ body.menu-active .container-fluid {
 
 /* Sticky Header */
 .nav-sticky.elementor-sticky--active{
-  transition: all 0.3s; /* Efek transisi saat berubah */
 }
 
 .nav-sticky.elementor-sticky--active.theridge-sticky-active{
