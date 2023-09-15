@@ -276,7 +276,6 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
 	    		$args = array(
 	    			'cat' => $category_id,
 			        'post_type' => $settings['post_type'],
-			        'posts_per_page' => $settings['post_count'],
 			    );
 
 			    $query = new WP_Query($args);
