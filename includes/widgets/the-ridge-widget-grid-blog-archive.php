@@ -313,7 +313,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
     										$category_id = get_cat_ID( $category->name );
 							                ?>
 							                <h5 class="mt-3">
-							                	<a class="blog-category" href="<?php echo esc_url( get_category_link($category_id) ); ?>">
+							                	<a class="blog-category" href="#">
 							                			<?php echo $category->name; ?>
 							                		</a>
 							                </h5>
