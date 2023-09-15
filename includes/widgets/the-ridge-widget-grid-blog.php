@@ -295,7 +295,9 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
 		    			<div class="col-lg-4 col-md-12 mb-3 d-flex align-items-stretch">
 			                <div class="card rounded-0 border-0 overflow-hidden">
 			                    <div class="image position-relative overflow-hidden">
+			                    	<a class="" href="<?php echo get_the_permalink(); ?>">
 			                    	<img src="<?php echo esc_url( $thumbnail_url ); ?>" class="img-fluid shadow object-fit-cover" alt="<?php echo esc_html( $title); ?>" style="display: block; height: 100%; width: 100%;">
+			                    	</a>
 			                    </div>
 
 			                    <div class="card-body px-0 content d-flex flex-column">	
@@ -307,7 +309,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog extends \Elementor\Widget_Base {
     										$category_id = get_cat_ID( $category->name );
 							                ?>
 							                <h5 class="mt-3">
-							                	<a class="blog-category" href="<?php echo esc_url( get_category_link($category_id) ); ?>">
+							                	<a class="blog-category" href="#">
 							                			<?php echo $category->name; ?>
 							                		</a>
 							                </h5>
