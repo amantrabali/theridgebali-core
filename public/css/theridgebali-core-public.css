@@ -92,13 +92,11 @@ html{
 
 #navigation p {
   color: #3D3D3D;
-  font-family: Space Grotesk;
-  font-size: 12px;
+  font-family: EB Garamond;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 160%; /* 19.2px */
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
+  line-height: 24px;
 }
 
 ul.menu, ul.menu-small {
