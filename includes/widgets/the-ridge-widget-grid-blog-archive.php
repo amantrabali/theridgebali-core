@@ -266,7 +266,8 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
 	protected function render() {
 	    $settings = $this->get_settings_for_display();
 	    // Retrieve the category ID from the query parameter
-        $category_id = intval($_GET['category_id']);
+        $category = get_queried_object();
+		$category_id = $category->term_id;
 	    ?>
 
 		<!-- Blog Grid Start -->
