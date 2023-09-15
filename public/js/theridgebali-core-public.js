@@ -123,16 +123,4 @@
 		}
 	});
 
-	// Get the <a> element
-	var linkElement = document.querySelector(".elementor-icon-list-item .elementor-post-info__item--type-custom a");
-
-	// Check if the <a> element exists
-	if (linkElement) {
-	  // Create a new text node with the same text content as the <a> element
-	  var newText = document.createTextNode(linkElement.textContent);
-	  
-	  // Replace the <a> element with the new text node
-	  linkElement.parentNode.replaceChild(newText, linkElement);
-	}
-
 })( jQuery );
