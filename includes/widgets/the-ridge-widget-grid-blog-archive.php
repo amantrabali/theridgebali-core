@@ -272,14 +272,14 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
 	    <div class="row justify-content-center">
 	    	<?php
 	    		$args = array(
-			        'post_type' => $settings['post_type'],
-			        'posts_per_page' => $settings['post_count'],
+			        'post_type' => 'post',
+			        'posts_per_page' => 9,
 			    );
 
 			    $query = new WP_Query($args);
 
 			    if ($query->have_posts()) {
-			    	while ($query->have_posts()) : $query->the_post();
+			    	while ($query->have_posts()) {
 		            	$query->the_post();
 		            	global $post;
 		            	// Get the post title and truncate it to 122 characters
@@ -340,7 +340,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
 			                </div>
 			            </div><!--end col-->
 		            	<?php
-	           		endwhile;
+	           		}
 			    } 
 			    else {
 			        echo __('No posts found.', 'theridgebali-core');
