@@ -318,6 +318,16 @@ body.menu-active .container-fluid {
     -webkit-transform: translateX(500px);
             transform: translateX(500px);
   }
+  #trbContactForm .elementor-field-type-recaptcha{
+    width: 70%;
+    float: left;
+  }
+  #trbContactForm .elementor-field-type-html{
+    width: 30%;
+    float: right;
+    text-align: right;
+
+  }
 }
 
 @media screen and (max-width: 768px) {
