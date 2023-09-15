@@ -265,6 +265,8 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
 
 	protected function render() {
 	    $settings = $this->get_settings_for_display();
+	    // Retrieve the category ID from the query parameter
+        $category_id = intval($_GET['category_id']);
 	    ?>
 
 		<!-- Blog Grid Start -->
@@ -272,8 +274,9 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
 	    <div class="row justify-content-center">
 	    	<?php
 	    		$args = array(
-			        'post_type' => 'post',
-			        'posts_per_page' => 9,
+	    			'cat' => $category_id,
+			        'post_type' => $settings['post_type'],
+			        'posts_per_page' => $settings['post_count'],
 			    );
 
 			    $query = new WP_Query($args);
