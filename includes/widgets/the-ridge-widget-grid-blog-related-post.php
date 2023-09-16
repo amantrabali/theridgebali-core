@@ -1,8 +1,8 @@
 <?php
-class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_Base {
+class Elementor_TheRidgeBali_Widget_Grid_Blog_Related extends \Elementor\Widget_Base {
 
 	public function get_name() {
-		return 'theridgebali_grid_blog_archive';
+		return 'theridgebali_grid_blog_related';
 	}
 
 	public function get_title() {
@@ -18,7 +18,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
 	}
 
 	public function get_keywords() {
-		return [ 'the ridge', 'grid blog', 'archive blog' ];
+		return [ 'the ridge', 'grid blog', 'related' ];
 	}
 
 	protected function register_controls() {
@@ -267,17 +267,23 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
 	    $settings = $this->get_settings_for_display();
 	    // Retrieve the category ID from the query parameter
         $category = get_queried_object();
-		$category_id = $category->term_id;
+		// Get the current post's ID
+    	$current_post_id = $post->ID;
+    	// Get the categories for the current post
+    	$categoriesID = wp_get_post_categories($current_post_id);
 	    ?>
 
 		<!-- Blog Grid Start -->
 		<div class="container-fluid blog-section">
 	    <div class="row justify-content-center">
 	    	<?php
+	    	if ($categoriesID) {
 	    		$args = array(
-	    			'cat' => $category_id,
-			        'post_type' => $settings['post_type'],
+	    			'post__not_in' => array($current_post_id), // Exclude the current post
+	    			'category__in' => $categoriesID, // Show posts in the same categories
+			        'post_type' => 'post',
 			        'posts_per_page' => $settings['post_count'],
+			        'orderby' => 'rand', // You can change the order as per your preference
 			    );
 
 			    $query = new WP_Query($args);
@@ -351,6 +357,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
 			    }
 
 	    wp_reset_postdata();
+		}
 	    ?>
 	    </div>
 		</div>
