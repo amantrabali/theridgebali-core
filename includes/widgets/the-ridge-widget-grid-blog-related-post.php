@@ -6,7 +6,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Related extends \Elementor\Widget_
 	}
 
 	public function get_title() {
-		return esc_html__( 'The Ridge Blog Grid Archive', 'theridgebali-core' );
+		return esc_html__( 'The Ridge Blog Grid Related Post', 'theridgebali-core' );
 	}
 
 	public function get_icon() {
