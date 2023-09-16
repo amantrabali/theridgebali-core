@@ -268,7 +268,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Related extends \Elementor\Widget_
 	    // Retrieve the category ID from the query parameter
         $category = get_queried_object();
 		// Get the current post's ID
-    	$current_post_id = $post->ID;
+    	$current_post_id = get_the_ID();
     	// Get the categories for the current post
     	$categoriesID = wp_get_post_categories($current_post_id);
 	    ?>
