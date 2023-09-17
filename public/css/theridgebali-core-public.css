@@ -411,6 +411,9 @@ body.menu-active .container-fluid {
     padding-left: 20px!important;
     padding-right: 20px!important;
   }
+  .single-post ul.elementor-inline-items.elementor-icon-list-items.elementor-post-info{
+    justify-content: space-between;
+  }
 }
 @media screen and (max-width: 768px) {
   #navigation hr {
