@@ -414,11 +414,11 @@ body.menu-active .container-fluid {
   .single-post ul.elementor-inline-items.elementor-icon-list-items.elementor-post-info{
     justify-content: space-between;
   }
-  .elementor:not(.elementor-bc-flex-widget) .elementor-widget-wrap {
+  .single-post .elementor:not(.elementor-bc-flex-widget) .elementor-widget-wrap {
     display: flex;
     justify-content: center;
   }
-  .container-fluid.blog-section {
+  .single-post .container-fluid.blog-section {
     padding: 0px;
   }
 }
