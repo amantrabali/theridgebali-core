@@ -418,6 +418,9 @@ body.menu-active .container-fluid {
     display: flex;
     justify-content: center;
   }
+  .container-fluid.blog-section {
+    padding: 0px;
+  }
 }
 @media screen and (max-width: 768px) {
   #navigation hr {
