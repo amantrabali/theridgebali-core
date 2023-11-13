@@ -22,7 +22,7 @@ html{
 }
 .nav-trigger {
   margin: 0px 0px 0px 10px;
-  padding-top: 10px;
+  padding-top: 3px;
   float: left;
   cursor: pointer;
   -webkit-transition: all .3s;
