@@ -457,6 +457,9 @@ body.menu-active .container-fluid {
   .trb-archive-category-grid{
     margin-top: 0px;
   }
+  .trb-archive-category-grid .row>* {
+    width: auto!important;
+  }
   .trb-archive-post-detail{
     padding: 0px;
   }
