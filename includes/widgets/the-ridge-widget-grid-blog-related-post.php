@@ -273,7 +273,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Related extends \Elementor\Widget_
     	$categoriesID = wp_get_post_categories($current_post_id);
 	    ?>
 
-		<!-- Blog Grid Start -->
+		<!-- Related Blog Grid Start -->
 		<div class="container-fluid blog-section">
 	    <div class="row justify-content-center">
 	    	<?php
