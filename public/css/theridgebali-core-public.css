@@ -13,6 +13,9 @@ html{
 .trb-archive-category-grid{
 
 }
+.blog-category.current-category{
+  font-weight: 700;
+}
 .trb-archive-post-grid{
   margin-top: 50px;
 }

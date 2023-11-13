@@ -282,10 +282,14 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
 		            'orderby' => 'name',
 		            'order'   => 'ASC'
 		        ));
+
+		        // Check if current page is a category archive
+        		$current_category = is_category() ? get_queried_object_id() : 0;
 			?>
 			<?php foreach ( $categoryalls as $categoryall) { ?>
+				<?php  $class = $categoryall->term_id == $current_category ? 'class="blog-category current-category"' : 'blog-category'; ?>
 				<div class="col-lg-2 col-md-2 mb-3 d-flex align-items-stretch">
-					<a class="blog-category" href="<?php echo get_category_link( $categoryall->term_id ); ?>"><?php echo esc_html( $categoryall->name ); ?></a>
+					<a <?php echo $class; ?> href="<?php echo get_category_link( $categoryall->term_id ); ?>"><?php echo esc_html( $categoryall->name ); ?></a>
 				</div>
 				<?php }	?>
 			</div>
