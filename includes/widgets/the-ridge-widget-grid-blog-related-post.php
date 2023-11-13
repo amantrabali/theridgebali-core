@@ -352,9 +352,15 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Related extends \Elementor\Widget_
 		            	<?php
 	           		}
 			    }
+			    else {
+			        echo __('No posts found.', 'theridgebali-core');
+			    }
 
 	    wp_reset_postdata();
 		}
+		else {
+			        echo __('No categories found.', 'theridgebali-core');
+			    }
 	    ?>
 	    </div>
 		</div>
