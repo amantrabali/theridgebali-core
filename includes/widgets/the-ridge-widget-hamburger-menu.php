@@ -49,9 +49,9 @@ class Elementor_TheRidgeBali_Widget_Hamburger_Menu extends \Elementor\Widget_Bas
 		<div id="topnav" class="topnav">
         <div class="col-md-3 col-xs-3">
               <div class="nav-trigger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+                <svg width="50" height="16" viewBox="0 0 50 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 1.45455V0H50V1.45455H0ZM50 7.27273V8.72727H0V7.27273H50ZM0 14.5455H50V16H0V14.5455Z" fill="black"/>
+</svg>
               </div>
         </div>
     	</div>
