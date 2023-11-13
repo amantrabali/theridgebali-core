@@ -431,6 +431,12 @@ body.menu-active .container-fluid {
   .single-post .container-fluid.blog-section {
     padding: 0px;
   }
+  .nav-trigger {
+    padding-top: 10px;
+  }
+  #navigation .nav-trigger {
+    top: -50px;
+  }
 }
 @media screen and (max-width: 768px) {
   #navigation hr {
