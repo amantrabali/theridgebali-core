@@ -190,6 +190,10 @@ body.menu-active .container-fluid {
 }
 
 /* Sticky Header */
+.nav-sticky.elementor-sticky--active .navGeneral .nav-trigger .svg-path{
+  fill: black;
+}
+
 .nav-sticky.elementor-sticky--active{
 }
 
