@@ -273,7 +273,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Related extends \Elementor\Widget_
     	$categoriesID = wp_get_post_categories($current_post_id);
 	    ?>
 
-		<!-- Related Blog Grid Start -->
+		<!-- Blog Grid Start -->
 		<div class="container-fluid blog-section">
 	    <div class="row justify-content-center">
 	    	<?php
@@ -289,9 +289,6 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Related extends \Elementor\Widget_
 			    $query = new WP_Query($args);
 
 			    if ($query->have_posts()) {
-			    	?>
-			    	<p>test</p>
-			    	<?php
 			    	while ($query->have_posts()) {
 		            	$query->the_post();
 		            	global $post;
@@ -355,15 +352,9 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Related extends \Elementor\Widget_
 		            	<?php
 	           		}
 			    }
-			    else {
-			        echo __('No posts found.', 'theridgebali-core');
-			    }
 
 	    wp_reset_postdata();
 		}
-		else {
-			        echo __('No categories found.', 'theridgebali-core');
-			    }
 	    ?>
 	    </div>
 		</div>
