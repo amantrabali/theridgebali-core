@@ -276,6 +276,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
 
 		<div class="row justify-content-center">
 		<div class="col-md-8">
+			<div class="row justify-content-center">
 			<?php 
 				$categoryalls = get_categories( array(
 		            'orderby' => 'name',
@@ -287,6 +288,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
 					<a href="<?php echo get_category_link( $categoryall->term_id ); ?>"><?php echo esc_html( $categoryall->name ); ?></a>
 				</div>
 				<?php }	?>
+			</div>
     	</div>
     	</div>
 
