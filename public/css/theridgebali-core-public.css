@@ -14,7 +14,7 @@ html{
 
 }
 .blog-category.current-category{
-  font-weight: 700;
+  font-weight: 700!important;
 }
 .trb-archive-post-grid{
   margin-top: 50px;
