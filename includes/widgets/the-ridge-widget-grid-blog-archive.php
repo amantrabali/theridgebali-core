@@ -275,7 +275,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
 
 
 		<div class="row justify-content-center trb-archive-category-grid">
-		<div class="col-md-8">
+		<div class="col-md-8 px-0">
 			<div class="row justify-content-center">
 			<?php 
 				$categoryalls = get_categories( array(
@@ -321,7 +321,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
 					    
 		    			?>
 
-		    			<div class="col-lg-4 col-md-12 mb-3 d-flex align-items-stretch">
+		    			<div class="col-lg-4 col-md-12 mb-3 d-flex align-items-stretch px-0">
 			                <div class="card rounded-0 border-0 overflow-hidden">
 			                    <div class="image position-relative overflow-hidden">
 			                    	<a class="" href="<?php echo get_the_permalink(); ?>">
