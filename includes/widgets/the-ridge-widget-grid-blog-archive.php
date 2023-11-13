@@ -285,7 +285,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
 			?>
 			<?php foreach ( $categoryalls as $categoryall) { ?>
 				<div class="col-lg-2 col-md-2 mb-3 d-flex align-items-stretch">
-					<a href="<?php echo get_category_link( $categoryall->term_id ); ?>"><?php echo esc_html( $categoryall->name ); ?></a>
+					<a class="blog-link" href="<?php echo get_category_link( $categoryall->term_id ); ?>"><?php echo esc_html( $categoryall->name ); ?></a>
 				</div>
 				<?php }	?>
 			</div>
