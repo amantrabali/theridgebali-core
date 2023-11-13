@@ -273,8 +273,9 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
 		<!-- Blog Grid Start -->
 		<div class="container-fluid blog-section">
 
-		<div class="col-md-8 justify-content-center">
+
 		<div class="row justify-content-center">
+		<div class="col-md-8">
 			<?php 
 				$categoryalls = get_categories( array(
 		            'orderby' => 'name',
