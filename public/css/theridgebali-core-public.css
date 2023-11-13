@@ -11,7 +11,7 @@ html{
   display:none;
 }
 .trb-archive-category-grid{
-
+  margin-bottom:50px;
 }
 .blog-category.current-category{
   font-weight: 700!important;
