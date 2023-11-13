@@ -273,6 +273,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
 		<!-- Blog Grid Start -->
 		<div class="container-fluid blog-section">
 
+		<div class="col-md-8">
 		<div class="row justify-content-center">
 			<?php 
 				$categoryalls = get_categories( array(
@@ -286,7 +287,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
 				</div>
 				<?php }	?>
     	</div>
-
+    	</div>
 
 	    <div class="row justify-content-center">
 	    	<?php
