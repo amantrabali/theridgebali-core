@@ -294,7 +294,22 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
 		            	$categories = get_the_category($post->ID);           
 					    $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'blog-post-grid' );
 					    $thumbnail_url = $thumbnail[0];
+
+					    $categoryalls = get_categories( array(
+				            'orderby' => 'name',
+				            'order'   => 'ASC'
+				        ));
 		    			?>
+			
+        				<div class="col-lg-12">
+        				<?php foreach ( $categories as $category ) { ?>
+        				<div class="col-lg-2 col-md-12 mb-3 d-flex align-items-stretch">
+        					<a href="<?php echo esc_attr( $category->term_id ); ?>"><?php echo esc_html( $category->name ); ?></a>
+        				</div>
+        				<?php }	?>
+        				</div>
+
+        				<div class="clearfix"></div>
 
 		    			<div class="col-lg-4 col-md-12 mb-3 d-flex align-items-stretch">
 			                <div class="card rounded-0 border-0 overflow-hidden">
