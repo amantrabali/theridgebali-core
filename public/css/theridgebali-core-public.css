@@ -32,6 +32,10 @@ html{
   width: 50px;  
 }
 
+.navGeneral .nav-trigger .svg-path{
+  fill: white;
+}
+
 .nav-trigger .bar {
   width: 50px;
   height: 2px;
