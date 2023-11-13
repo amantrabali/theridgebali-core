@@ -289,6 +289,9 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Related extends \Elementor\Widget_
 			    $query = new WP_Query($args);
 
 			    if ($query->have_posts()) {
+			    	?>
+			    	<p>test</p>
+			    	<?php
 			    	while ($query->have_posts()) {
 		            	$query->the_post();
 		            	global $post;
