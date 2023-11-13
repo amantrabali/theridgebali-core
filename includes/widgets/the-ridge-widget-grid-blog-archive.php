@@ -272,6 +272,26 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
 
 		<!-- Blog Grid Start -->
 		<div class="container-fluid blog-section">
+
+		<div class="row justify-content-center">
+			<?php 
+				$categoryalls = get_categories( array(
+		            'orderby' => 'name',
+		            'order'   => 'ASC'
+		        ));
+			?>
+			<div class="col-lg-12">
+				<div class="row">
+				<?php foreach ( $categoryalls as $categoryall) { ?>
+				<div class="col-lg-2 col-md-12 mb-3 d-flex align-items-stretch">
+					<a href="<?php echo get_category_link( $categoryall->term_id ); ?>"><?php echo esc_html( $categoryall->name ); ?></a>
+				</div>
+				<?php }	?>
+				</div>
+	        </div>
+    	</div>
+
+
 	    <div class="row justify-content-center">
 	    	<?php
 	    		$args = array(
@@ -294,24 +314,8 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
 		            	$categories = get_the_category($post->ID);           
 					    $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'blog-post-grid' );
 					    $thumbnail_url = $thumbnail[0];
-
-					    $categoryalls = get_categories( array(
-				            'orderby' => 'name',
-				            'order'   => 'ASC'
-				        ));
+					    
 		    			?>
-			
-        				<div class="col-lg-12">
-        				<div class="row">
-        				<?php foreach ( $categoryalls as $categoryall) { ?>
-        				<div class="col-lg-2 col-md-12 mb-3 d-flex align-items-stretch">
-        					<a href="<?php echo get_category_link( $categoryall->term_id ); ?>"><?php echo esc_html( $categoryall->name ); ?></a>
-        				</div>
-        				<?php }	?>
-        				</div>
-        				</div>
-
-        				<div class="col-lg-12"></div>
 
 		    			<div class="col-lg-4 col-md-12 mb-3 d-flex align-items-stretch">
 			                <div class="card rounded-0 border-0 overflow-hidden">
