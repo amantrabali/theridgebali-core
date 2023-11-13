@@ -36,6 +36,11 @@ html{
   fill: white;
 }
 
+.navGeneral #navigation .nav-trigger .svg-path{
+  fill: black;
+}
+
+
 .nav-trigger .bar {
   width: 50px;
   height: 2px;
