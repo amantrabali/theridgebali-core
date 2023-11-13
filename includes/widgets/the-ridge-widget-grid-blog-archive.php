@@ -274,7 +274,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
 		<div class="container-fluid blog-section">
 
 
-		<div class="row justify-content-center">
+		<div class="row justify-content-center trb-archive-category-grid">
 		<div class="col-md-8">
 			<div class="row justify-content-center">
 			<?php 
@@ -292,7 +292,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
     	</div>
     	</div>
 
-	    <div class="row justify-content-center">
+	    <div class="row justify-content-center trb-archive-post-grid">
 	    	<?php
 	    		$args = array(
 	    			'cat' => $category_id,

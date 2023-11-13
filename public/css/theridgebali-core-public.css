@@ -10,6 +10,12 @@ html{
 .trb-hidden{
   display:none;
 }
+.trb-archive-category-grid{
+
+}
+.trb-archive-post-grid{
+  margin-top: 50px;
+}
 .nav-trigger {
   margin: 0px 0px 0px 10px;
   padding-top: 10px;
