@@ -336,7 +336,7 @@ body.menu-active .container-fluid {
 
 /* Button Accordion*/
 #trbi-Floorplan, #trbi-Amenities, #trbi-Spesification {
-    display: none;
+/*    display: none;*/
 }
 
 
