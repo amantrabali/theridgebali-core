@@ -339,6 +339,11 @@ body.menu-active .container-fluid {
 /*    display: none;*/
 }
 
+.trbi-Facilities ul {
+    padding-left: 0rem;
+    margin-left: 2rem;
+}
+
 
 @media screen and (min-width: 768px) {
   body.menu-active .container-fluid {
