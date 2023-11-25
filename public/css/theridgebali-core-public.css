@@ -351,6 +351,9 @@ body.menu-active .container-fluid {
    color: #3d3d3d!important;
    font-style: normal!important;
    text-decoration: none!important;
+   font-weight: 400!important;
+   text-transform: unset!important;
+   letter-spacing: 3em!important;
 }
 
 @media screen and (min-width: 768px) {
