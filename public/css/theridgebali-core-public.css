@@ -345,12 +345,12 @@ body.menu-active .container-fluid {
 }
 
 .trbi-title-link, .trbi-title-link a{
-   font-family: EB Garamond;
-   font-size: 32px;
-   line-height: 44px;
-   color: #3d3d3d;
-   font-style: normal;
-   text-decoration: none;
+   font-family: EB Garamond!important;
+   font-size: 32px!important;
+   line-height: 44px!important;
+   color: #3d3d3d!important;
+   font-style: normal!important;
+   text-decoration: none!important;
 }
 
 @media screen and (min-width: 768px) {
