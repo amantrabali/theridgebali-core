@@ -344,7 +344,7 @@ body.menu-active .container-fluid {
     margin-left: 2rem;
 }
 
-.trbi-title-link{
+.trbi-title-link, .trbi-title-link a{
    font-family: EB Garamond;
    font-size: 32px;
    line-height: 44px;
