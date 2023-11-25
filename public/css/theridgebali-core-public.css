@@ -344,6 +344,14 @@ body.menu-active .container-fluid {
     margin-left: 2rem;
 }
 
+.trbi-title-link{
+   font-family: EB Garamond;
+   font-size: 32px;
+   line-height: 44px;
+   color: #3d3d3d;
+   font-style: normal;
+   text-decoration: none;
+}
 
 @media screen and (min-width: 768px) {
   body.menu-active .container-fluid {
