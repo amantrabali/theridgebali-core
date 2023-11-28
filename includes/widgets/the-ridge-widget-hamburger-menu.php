@@ -113,7 +113,7 @@ class Elementor_TheRidgeBali_Widget_Hamburger_Menu extends \Elementor\Widget_Bas
 		<div id="topnav" class="topnav">
         <div class="col-md-3 col-xs-3">
               <div class="nav-trigger">
-	                <svg width="<?php echo $main_menu_width; ?>" height="<?php echo $main_menu_height; ?>" viewBox="0 0 50 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	                <svg width="<?php echo $main_menu_width; ?>" height="100%" viewBox="0 0 50 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path class="svg-path" d="M0 1.45455V0H50V1.45455H0ZM50 7.27273V8.72727H0V7.27273H50ZM0 14.5455H50V16H0V14.5455Z" fill="none"/>
 									</svg>
               </div>
