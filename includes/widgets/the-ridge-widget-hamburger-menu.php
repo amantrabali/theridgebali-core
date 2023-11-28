@@ -33,44 +33,32 @@ class Elementor_TheRidgeBali_Widget_Hamburger_Menu extends \Elementor\Widget_Bas
 			]
 		);
 
-		$this->add_control(
-        'main_width_desktop',
-        [
-            'label' => __('Width (Desktop)', 'theridgebali-core'),
-            'type' => \Elementor\Controls_Manager::CHOOSE,
-            'default' => 50,
-            'devices' => [ 'desktop', 'tablet','mobile' ],
-        ]
-    );
-
-    $this->add_control(
-        'main_width_mobile',
-        [
-            'label' => __('Width (Mobile)', 'theridgebali-core'),
-            'type' => \Elementor\Controls_Manager::NUMBER,
-            'default' => 50,
-            'devices' => [ 'mobile' ],
-        ]
-    );
-
-    $this->add_control(
-			'hamburger_color',
+		$this->add_responsive_control(
+			'space_between',
 			[
-				'label' => esc_html__( 'Hamburger Color', 'theridgebali-core' ),
-				'type' => \Elementor\Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .menu-main-color' => 'color: {{VALUE}}',
+				'type' => \Elementor\Controls_Manager::SLIDER,
+				'label' => esc_html__( 'Menu Width', 'textdomain' ),
+				'range' => [
+					'px' => [
+						'min' => 0,
+						'max' => 100,
+					],
 				],
-			]
-		);
-
-		$this->add_control(
-			'hamburger_sticky_color',
-			[
-				'label' => esc_html__( 'Hamburger Sticky Color', 'theridgebali-core' ),
-				'type' => \Elementor\Controls_Manager::COLOR,
+				'devices' => [ 'desktop', 'tablet', 'mobile' ],
+				'desktop_default' => [
+					'size' => 30,
+					'unit' => 'px',
+				],
+				'tablet_default' => [
+					'size' => 20,
+					'unit' => 'px',
+				],
+				'mobile_default' => [
+					'size' => 10,
+					'unit' => 'px',
+				],
 				'selectors' => [
-					'{{WRAPPER}} .menu-main-sticky-color' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .hamburger-main-menu' => 'width: {{SIZE}}{{UNIT}};',
 				],
 			]
 		);
@@ -93,7 +81,7 @@ class Elementor_TheRidgeBali_Widget_Hamburger_Menu extends \Elementor\Widget_Bas
 		<div id="topnav" class="topnav">
         <div class="col-md-3 col-xs-3">
               <div class="nav-trigger">
-	                <svg width="<?php echo $main_menu_width; ?>" height="100%" viewBox="0 0 50 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	                <svg class="hamburger-main-menu" width="100%" height="100%" viewBox="0 0 50 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path class="svg-path" d="M0 1.45455V0H50V1.45455H0ZM50 7.27273V8.72727H0V7.27273H50ZM0 14.5455H50V16H0V14.5455Z" fill="none"/>
 									</svg>
               </div>
