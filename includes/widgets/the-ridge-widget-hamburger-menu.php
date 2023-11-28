@@ -33,6 +33,75 @@ class Elementor_TheRidgeBali_Widget_Hamburger_Menu extends \Elementor\Widget_Bas
 			]
 		);
 
+		$this->add_control(
+			'hamburger-image',
+			[
+				'label' => esc_html__( 'Choose Image', 'theridgebali-core' ),
+				'type' => \Elementor\Controls_Manager::MEDIA,
+				'default' => [
+					'url' => \Elementor\Utils::get_placeholder_image_src(),
+				],
+			]
+		);
+
+		$this->add_control(
+        'width_desktop',
+        [
+            'label' => __('Width (Desktop)', 'theridgebali-core'),
+            'type' => \Elementor\Controls_Manager::NUMBER,
+            'default' => 50,
+        ]
+    );
+
+    $this->add_control(
+        'height_desktop',
+        [
+            'label' => __('Height (Desktop)', 'theridgebali-core'),
+            'type' => \Elementor\Controls_Manager::NUMBER,
+            'default' => 50,
+        ]
+    );
+
+    $this->add_control(
+        'width_mobile',
+        [
+            'label' => __('Width (Mobile)', 'theridgebali-core'),
+            'type' => \Elementor\Controls_Manager::NUMBER,
+            'default' => 50,
+        ]
+    );
+
+    $this->add_control(
+        'height_mobile',
+        [
+            'label' => __('Height (Mobile)', 'theridgebali-core'),
+            'type' => \Elementor\Controls_Manager::NUMBER,
+            'default' => 50,
+        ]
+    );
+
+    $this->add_control(
+			'hamburger_color',
+			[
+				'label' => esc_html__( 'Hamburger Color', 'theridgebali-core' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .menu-main-color' => 'color: {{VALUE}}',
+				],
+			]
+		);
+
+		$this->add_control(
+			'hamburger_sticky_color',
+			[
+				'label' => esc_html__( 'Hamburger Sticky Color', 'theridgebali-core' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .menu-main-sticky-color' => 'color: {{VALUE}}',
+				],
+			]
+		);
+
 
 		$this->end_controls_section();
 
