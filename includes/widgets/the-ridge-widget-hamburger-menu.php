@@ -33,6 +33,28 @@ class Elementor_TheRidgeBali_Widget_Hamburger_Menu extends \Elementor\Widget_Bas
 			]
 		);
 
+		$this->add_control(
+			'hamburger_color',
+			[
+				'label' => esc_html__( 'Hamburger Color', 'theridgebali-core' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .menu-main-color' => 'color: {{VALUE}}',
+				],
+			]
+		);
+
+		$this->add_control(
+			'hamburger_sticky_color',
+			[
+				'label' => esc_html__( 'Hamburger Sticky Color', 'theridgebali-core' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .menu-main-sticky-color' => 'color: {{VALUE}}',
+				],
+			]
+		);
+
 		$this->add_responsive_control(
 			'space_between',
 			[
@@ -73,15 +95,13 @@ class Elementor_TheRidgeBali_Widget_Hamburger_Menu extends \Elementor\Widget_Bas
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		$main_menu_width = $settings['main_width_desktop'];
-		$main_menu_height = $settings['main_height_desktop'];
 		?>
 
 		<!-- Menu Start -->
 		<div id="topnav" class="topnav">
         <div class="col-md-3 col-xs-3">
               <div class="nav-trigger">
-	                <svg class="hamburger-main-menu" width="100%" height="100%" viewBox="0 0 50 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	                <svg class="hamburger-main-menu menu-main-color" width="100%" height="100%" viewBox="0 0 50 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path class="svg-path" d="M0 1.45455V0H50V1.45455H0ZM50 7.27273V8.72727H0V7.27273H50ZM0 14.5455H50V16H0V14.5455Z" fill="none"/>
 									</svg>
               </div>
