@@ -37,7 +37,7 @@ class Elementor_TheRidgeBali_Widget_Hamburger_Menu extends \Elementor\Widget_Bas
         'main_width_desktop',
         [
             'label' => __('Width (Desktop)', 'theridgebali-core'),
-            'type' => \Elementor\Controls_Manager::NUMBER,
+            'type' => \Elementor\Controls_Manager::CHOOSE,
             'default' => 50,
             'devices' => [ 'desktop', 'tablet','mobile' ],
         ]
