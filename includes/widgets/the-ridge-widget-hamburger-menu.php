@@ -39,6 +39,7 @@ class Elementor_TheRidgeBali_Widget_Hamburger_Menu extends \Elementor\Widget_Bas
             'label' => __('Width (Desktop)', 'theridgebali-core'),
             'type' => \Elementor\Controls_Manager::NUMBER,
             'default' => 50,
+            'devices' => [ 'desktop', 'tablet' ],
         ]
     );
 
@@ -48,24 +49,27 @@ class Elementor_TheRidgeBali_Widget_Hamburger_Menu extends \Elementor\Widget_Bas
             'label' => __('Height (Desktop)', 'theridgebali-core'),
             'type' => \Elementor\Controls_Manager::NUMBER,
             'default' => 50,
+            'devices' => [ 'desktop', 'tablet' ],
         ]
     );
 
     $this->add_control(
-        'width_mobile',
+        'main_width_mobile',
         [
             'label' => __('Width (Mobile)', 'theridgebali-core'),
             'type' => \Elementor\Controls_Manager::NUMBER,
             'default' => 50,
+            'devices' => [ 'mobile' ],
         ]
     );
 
     $this->add_control(
-        'height_mobile',
+        'main_height_mobile',
         [
             'label' => __('Height (Mobile)', 'theridgebali-core'),
             'type' => \Elementor\Controls_Manager::NUMBER,
             'default' => 50,
+            'devices' => [ 'mobile' ],
         ]
     );
 
