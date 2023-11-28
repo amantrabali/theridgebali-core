@@ -34,18 +34,7 @@ class Elementor_TheRidgeBali_Widget_Hamburger_Menu extends \Elementor\Widget_Bas
 		);
 
 		$this->add_control(
-			'hamburger-image',
-			[
-				'label' => esc_html__( 'Choose Image', 'theridgebali-core' ),
-				'type' => \Elementor\Controls_Manager::MEDIA,
-				'default' => [
-					'url' => \Elementor\Utils::get_placeholder_image_src(),
-				],
-			]
-		);
-
-		$this->add_control(
-        'width_desktop',
+        'main_width_desktop',
         [
             'label' => __('Width (Desktop)', 'theridgebali-core'),
             'type' => \Elementor\Controls_Manager::NUMBER,
@@ -54,7 +43,7 @@ class Elementor_TheRidgeBali_Widget_Hamburger_Menu extends \Elementor\Widget_Bas
     );
 
     $this->add_control(
-        'height_desktop',
+        'main_height_desktop',
         [
             'label' => __('Height (Desktop)', 'theridgebali-core'),
             'type' => \Elementor\Controls_Manager::NUMBER,
@@ -112,13 +101,15 @@ class Elementor_TheRidgeBali_Widget_Hamburger_Menu extends \Elementor\Widget_Bas
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
+		$main_menu_width = $settings['main_width_desktop'];
+		$main_menu_height = $settings['main_height_desktop'];
 		?>
 
 		<!-- Menu Start -->
 		<div id="topnav" class="topnav">
         <div class="col-md-3 col-xs-3">
               <div class="nav-trigger">
-	                <svg width="50" height="16" viewBox="0 0 50 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	                <svg width="<?php echo $main_menu_width; ?>" height="<?php echo $main_menu_height; ?>" viewBox="0 0 50 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path class="svg-path" d="M0 1.45455V0H50V1.45455H0ZM50 7.27273V8.72727H0V7.27273H50ZM0 14.5455H50V16H0V14.5455Z" fill="none"/>
 									</svg>
               </div>
