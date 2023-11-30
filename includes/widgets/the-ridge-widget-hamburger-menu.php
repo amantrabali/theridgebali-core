@@ -33,6 +33,7 @@ class Elementor_TheRidgeBali_Widget_Hamburger_Menu extends \Elementor\Widget_Bas
 			]
 		);
 
+		
 		$this->add_responsive_control(
 			'hamburger_main_menu',
 			[
@@ -93,6 +94,16 @@ class Elementor_TheRidgeBali_Widget_Hamburger_Menu extends \Elementor\Widget_Bas
 			]
 		);
 
+		$this->add_control(
+			'section_menu_content',
+			[
+				'label' => esc_html__( 'Description', 'theridgebali-core' ),
+				'type' => \Elementor\Controls_Manager::TEXTAREA,
+				'default' => esc_html__( '"Welcome to our exclusive villa in Bali - Your dream destination for a perfect getaway. Immerse yourself in breathtaking views, modern amenities, and the serene beauty of the island. Book now and create unforgettable memories with your family and friends at our Bali Villa."', 'theridgebali-core' ),
+				'show_label' => false,
+			]
+		);
+
 
 		$this->end_controls_section();
 
@@ -135,7 +146,7 @@ class Elementor_TheRidgeBali_Widget_Hamburger_Menu extends \Elementor\Widget_Bas
 		        ?>
 
 		        <hr>
-		        <p>"Welcome to our exclusive villa in Bali - Your dream destination for a perfect getaway. Immerse yourself in breathtaking views, modern amenities, and the serene beauty of the island. Book now and create unforgettable memories with your family and friends at our Bali Villa.  </p>
+		        <p><?php echo $settings['section_menu_content']; ?></p>
 		    </div>
 		</aside>
 
