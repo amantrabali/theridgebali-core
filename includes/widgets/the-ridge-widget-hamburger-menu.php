@@ -99,8 +99,8 @@ class Elementor_TheRidgeBali_Widget_Hamburger_Menu extends \Elementor\Widget_Bas
 			[
 				'label' => esc_html__( 'Description', 'theridgebali-core' ),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
-				'default' => esc_html__( '"Welcome to our exclusive villa in Bali - Your dream destination for a perfect getaway. Immerse yourself in breathtaking views, modern amenities, and the serene beauty of the island. Book now and create unforgettable memories with your family and friends at our Bali Villa."', 'theridgebali-core' ),
-				'show_label' => false,
+				'default' => esc_html__( 'Welcome to our exclusive villa in Bali - Your dream destination for a perfect getaway. Immerse yourself in breathtaking views, modern amenities, and the serene beauty of the island. Book now and create unforgettable memories with your family and friends at our Bali Villa.', 'theridgebali-core' ),
+				'show_label' => true,
 			]
 		);
 
