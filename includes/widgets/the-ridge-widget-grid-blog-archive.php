@@ -321,7 +321,7 @@ class Elementor_TheRidgeBali_Widget_Grid_Blog_Archive extends \Elementor\Widget_
 					    
 		    			?>
 
-		    			<div class="col-lg-4 col-md-12 mb-3 d-flex align-items-stretch trb-archive-post-detail">
+		    			<div class="col-lg-4 col-md-12 mb-5 d-flex align-items-stretch trb-archive-post-detail">
 			                <div class="card rounded-0 border-0 overflow-hidden">
 			                    <div class="image position-relative overflow-hidden">
 			                    	<a class="" href="<?php echo get_the_permalink(); ?>">
