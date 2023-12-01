@@ -33,8 +33,6 @@ html{
   padding-top: 3px;
   float: left;
   cursor: pointer;
-  -webkit-transition: all .3s;
-  transition: all .3s;
   z-index: 10;
   height: auto;
   width: 50px;  
@@ -67,10 +65,6 @@ html{
   top: 0;
   left: -500px;
   height: 100%;
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
 }
 
 #navigation .menu-item a{
