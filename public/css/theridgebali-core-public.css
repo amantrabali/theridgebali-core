@@ -209,7 +209,7 @@ body.menu-active .container-fluid {
 .nav-sticky.elementor-sticky--active.theridge-sticky-active{
   background: #FFF;
   background-color: #FFF;
-  padding: 5px 30px 5px 30px!important;
+/*  padding: 5px 30px 5px 30px!important;*/
 }
 
 .nav-sticky.elementor-sticky--active.theridge-sticky-active .elementor-element-populated{
@@ -421,7 +421,7 @@ body.menu-active .container-fluid {
     width: 194px;
   }
   .nav-sticky.elementor-sticky--active.theridge-sticky-active{
-    padding: 0px 10px 0px 10px!important;
+/*    padding: 0px 10px 0px 10px!important;*/
   }
   .nav-sticky.elementor-sticky--active.theridge-sticky-active .the-ridge-nav-column{
     height: inherit;
