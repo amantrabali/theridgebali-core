@@ -69,6 +69,32 @@ html{
     text-decoration: none!important;
 }
 
+#navigation .nav-trigger {
+  position: absolute;
+  top: -35px;
+  left: -5px;
+  opacity: 0;
+}
+
+#navigation .nav-trigger .bar {
+  background: #000;
+  opacity: 0;
+  margin: 0;
+}
+
+#navigation .nav-trigger .bar:first-child {
+  margin-top: 17px;
+  opacity: 1;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#navigation .nav-trigger .bar:last-child {
+  opacity: 1;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin-top: -5px;
+}
 
 #navigation .inner {
   margin: 60px;
@@ -175,15 +201,29 @@ body.menu-active .container-fluid {
   fill: black;
 }
 
-
-.nav-sticky.elementor-sticky--active.theridge-sticky-active .btn-reserve .elementor-widget-container{
-  border-color: #101010;
+.nav-sticky.elementor-sticky--active{
 }
 
 .nav-sticky.elementor-sticky--active.theridge-sticky-active{
   background: #FFF;
   background-color: #FFF;
 /*  padding: 5px 30px 5px 30px!important;*/
+}
+
+.nav-sticky.elementor-sticky--active.theridge-sticky-active .elementor-element-populated{
+  padding: 10px;
+}
+
+.nav-sticky.elementor-sticky--active.theridge-sticky-active .nav-trigger .bar {
+  background: #101010;
+}
+
+.nav-sticky.elementor-sticky--active.theridge-sticky-active .btn-reserve .elementor-widget-container a{
+  color: #101010;
+}
+
+.nav-sticky.elementor-sticky--active.theridge-sticky-active .btn-reserve .elementor-widget-container{
+  border-color: #101010;
 }
 
 .nav-sticky.elementor-sticky--active.theridge-sticky-active .the-ridge-logo img{
@@ -315,6 +355,14 @@ body.menu-active .container-fluid {
 }
 
 @media screen and (min-width: 768px) {
+  body.menu-active .container-fluid {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  body.menu-active #navigation {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+  }
   #trbContactForm .elementor-field-type-recaptcha{
     width: 70%;
     float: left;
@@ -355,6 +403,10 @@ body.menu-active .container-fluid {
   ul.menu li, ul.menu-small li {
     margin: 20px 0;
     font-size: 1.2em;
+  }
+  body.menu-active #navigation {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
   }
   .nav-sticky.elementor-sticky--active.theridge-sticky-active .the-ridge-logo img{
     filter: invert(1) hue-rotate(0deg) brightness(0.5);
