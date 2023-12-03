@@ -180,6 +180,12 @@ body.menu-active .container-fluid {
   border-color: #101010;
 }
 
+.nav-sticky.elementor-sticky--active.theridge-sticky-active{
+  background: #FFF;
+  background-color: #FFF;
+/*  padding: 5px 30px 5px 30px!important;*/
+}
+
 .nav-sticky.elementor-sticky--active.theridge-sticky-active .the-ridge-logo img{
   filter: invert(1) hue-rotate(0deg) brightness(0.5);
   fill: #101010;
