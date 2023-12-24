@@ -502,6 +502,9 @@ body.menu-active .container-fluid {
   }
   .blog-section .col-lg-4.col-md-12.align-items-stretch{
   }
+  #theRidgeCarousel .swiper-wrapper{
+    height: 300px;
+}
 }
 @media screen and (max-width: 768px) {
   #navigation hr {
