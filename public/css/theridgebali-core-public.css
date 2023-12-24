@@ -286,7 +286,7 @@ body.menu-active .container-fluid {
     height: 500px;
 }
 #theRidgeCarousel .swiper-slide {
-    display: inline-grid;
+    display: list-item;
     align-items: stretch;
 }
 
