@@ -282,6 +282,27 @@ body.menu-active .container-fluid {
   transition: opacity .4s;
 }
 
+#theRidgeCarousel .swiper-wrapper{
+    height: 500px;
+}
+#theRidgeCarousel .swiper-slide {
+    display: flex;
+    align-items: stretch;
+}
+
+#theRidgeCarousel .swiper-slide-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+#theRidgeCarousel .swiper-slide-inner img.swiper-slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .the-ridge-sectiom ul, .the-ridge-sectiom ol {
     margin: 0px;
     padding: 10px 15px;
