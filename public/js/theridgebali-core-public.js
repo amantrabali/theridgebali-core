@@ -50,6 +50,14 @@
 	    navbarRidge();
 	});
 
+    jQuery(document).ready(function() {
+      // Find elements with class 'ti-name' that contain the text 'state of street'
+      var elementsToHide = jQuery('.ti-name:contains("state of street")').closest('.ti-review-item');
+
+      // Hide the found elements
+      elementsToHide.hide();
+    });
+
 	// Select the header element with the class .nav-sticky
 	const navSticky = document.querySelector('.nav-sticky');
 
